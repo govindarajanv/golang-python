@@ -7,67 +7,40 @@ python3 -m pydoc -w ./dunder.py
 
 
 class Dunder:
-
-    """
-    class method to create a new instance
-    """
-
-    def __new__(cls, name, tag) -> object:
-        print("__new__")
+    def __new__(cls,name)->object:
+        print ("__new__ is called")
         return super(Dunder, cls).__new__(cls)
 
-    """
-			instance method to initialize a new instance
-		"""
+    def __init__(self,name)->None:
+        print (f"__init__ is called with {name} as the argument")
+        self.__name = name
 
-    def __init__(self, name, tag) -> None:
-        print("__init__")
-        self.name = name
-        self.tag = tag
 
-    """
-			instance method to stringify the object which is humanreadable
-		def __str__(self)->str:
-				print ("__str__ return string value of class name")
-				return self.name
+    def __str__(self)->str:
+        print ("__str__ is called")
+        return f"Class Dunder with {self.__name}. Returned by __str__"
 
-			instance method to string representation the object
-	"""
+    def __repr__(self)->str:
+        print ("__repr__ is called but will be overridden by __str__")
+        return f"Class Dunder with {self.__name}. Returned by __repr__"
 
-    def __repr__(self) -> str:
-        print("__repr__ return string value of class name as shown below  and it is called by __str__")
-        return f" Dunder class with {self.name}"
+    def __call__(self,times,*args, **kwargs)->None:
+        print ("__call__ is called")
+        print (f"{self.__name} " * times)
 
     @property
-    def __dict__(self):
-        print("__dict__")
-        return {"name": self.name}
+    def __dict__(self)->str:
+        print ("__dict__ is called")
+        return {"name": self.__name}
 
-    """
-    _call__ method helps to make instance call behave like functions
-
-    """
-
-    def __call__(self, times):
-        print("__call__")
-        print(f"{self.name} " * times)
-
-    """
-    _del__ method gets executed whenever an object is deleted
-    """
-
-    def __del__(self):
-        print("__del__")
-
+    def __del__(self)->None:
+        print (f"__del__ is called for {self.__name}")
 
 if __name__ == "__main__":
-    d1 = Dunder("Testing", "magic")
-    print ("calling an object with parameters")
+    d1 = Dunder("Magic")
+    print (d1)
     d1(3)
-
-    print("-----------------------")
-
+    print ("=" * 50)
     d2 = object.__new__(Dunder)
-    d2.__init__("Python", "magic")
-    print(d2.__dict__)
-    print(d2)
+    d2.__init__("New")
+    print (d2.__dict__)
