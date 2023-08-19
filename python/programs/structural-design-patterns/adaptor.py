@@ -1,88 +1,31 @@
-class TypeA_Plug:
-
+class MobileAdapter:
     def __init__(self):
-        self.current = "15 A"
-        self.voltage = "110 V"
+        self.out_voltage = 0
+        self.out_ampere = 0
 
-    def deliver(self):
-        return f" Charging with {self.current}/{self.voltage}"
+    def connect(self)
 
-    def __str__(self):
-        return f"Plug Type A ({self.current}/{self.voltage})\n"
+class  Socket:
+    pass
 
-class TypeA_Socket:
-
-    def __init__(self,plug):
-        self.current = "15 A"
-        self.voltage = "110 V"
-        self.plug = None
-        self.connected =False
-    
-    def switch_on(self):
-        if (self.current == plug.current and self.voltage == plug.voltage):
-            self.plug.deliver()
-            return True
-        else:
-            print ("Not Charging")
-            return False
-
-    def __str__(self):
-        return f"Socket Type A ({self.current}/{self.voltage})\n"
-
-class TypeC_Socket:
-    
-    def __init__(self):
-        self.current = "2.5 A"
-        self.voltage = "220 V"
-    
-    def deliver(self,plug):
-        self.current = current
-        self.voltage = voltage
-
-    def __init__(self):
-        self.current = "2.5 A"
-        self.voltage = "220 V"
-    
-    def deliver(self,plug):
-        self.current = current
-        self.voltage = voltage
-
-    def __str__(self):
-        return f"Socket Type C ({self.current}/{self.voltage})\n"
-
-class C2AAdapter:
-
-    def __init__(self):
-        self.socket = "Type C"
-
-    
 class Mobile:
+    def __init__(self):
+        self.__charging = False
+        self.__voltage = 5
+        self.__ampere = 2.1
 
-    def __init__(self, battery_percent):
-        self.battery_percent = battery_percent
-    
-    def charge_me(self,socket):
-        print ("We are charging a mobile having battery {}%  with {} and {}\n".format(self.battery_percent,socket.plug,socket))
+    def connect(self,adapter):
+        if adapter.out_voltage == self.__voltage and adapter.out_ampere == self.__ampere:
+            self.__charging = True
+        else:
+            self.__charging = False
 
-        status = socket.switch_on()
-        #self.battery_percent = str(int(self.battery_percent) + 1)
-        return f"{status}!!! Battery {self.battery_percent}%\n"
-
+    def charge_status(self):
+        return self.__charging
 
 
 if __name__ == "__main__":
-    
-    mobile = Mobile("10")
-    plug = TypeA_Plug()
-    socket = TypeA_Socket(plug)
-    print (mobile.charge_me(socket))
-
- #   mobile = Mobile("20")
- #   plug = TypeA_Plug()
- #   socket = TypeC_Socket()
- #   print (mobile.charge_me(plug,socket))
-
- #   mobile = Mobile("20")
- #   plug = TypeA_Plug()
- #   socket = TypeC_Socket()
- #   print (mobile.charge_me(plug,socket))   
+    mobile = Mobile()
+    adapter = MobileAdapter()
+    mobile.connect(adapter)
+    print (mobile.charge_status())
