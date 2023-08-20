@@ -96,10 +96,10 @@
 92. create Kafka topic on MSK running on localstack using AWS CDK
 93. Run a calculator API on localstack using
   1. Serverless
-94. Python script to create Kafka Topics
+94. gRPC in Python [ref](https://www.velotio.com/engineering-blog/grpc-implementation-using-python)
 95. kubernetes operator using kopf
 96. A custom webhook using Python Flask API for Kubernetes Validating and Mutating Admission controllers
 97. Use a list comprehension to halve each even number in a list
 98. write assert statements to verify that every number in a list is odd (generate the list with random numbers between 1 to 20
-99. 
-100. 
+99. Implement a system admin task using subprocess,os,sys modules
+100. GraphQL [ref](https://www.apollographql.com/blog/graphql/python/complete-api-guide/)
