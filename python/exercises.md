@@ -1,4 +1,3 @@
-
 1. Dunder Methods
 2. Thread safe Singleton using allocators 
 3. Singleton using decorator
@@ -8,25 +7,40 @@
 7. Builder Design Pattern
 8. Prototype Design Pattern
 9. Adapter Design Pattern
-10. Decorator Design Pattern
-11. Python Mixins [ref](https://dev.to/bikramjeetsingh/write-composable-reusable-python-classes-using-mixins-6lj)
-12. Login Screen with TKinter and Sqllite3 [Ref](https://owlbuddy.com/login-and-signup-using-sqlite)
-13. Asyncio
-14. Generators
-15. Coroutines
-16. Fibonacci series using Reflections
-17. Filters, Maps, Any, All
-18. Multi-threading
-19. Socket Programming
-20. Descriptors
-21. Enumerate
-22. Closures
-23. Factorial using Recursion and Memoization
-24. Reflections
-25. Subroutines
-26. Currying Method
-27. Context Managers
-28. CGI Programming
-29. Modules
-30. 
-31. 
+10. Bridge
+11. Composite
+12. Decorator
+13. Facade
+14. Flyweight
+15. Proxy
+16. COR
+17. Command
+18. Iterator
+19. Mediator
+20. Memento
+21. Observer
+22. State
+23. Strategy
+24. Template Method
+25. Visitor
+26. Modules (implement simplest MVC)
+27. Python Mixins [ref](https://dev.to/bikramjeetsingh/write-composable-reusable-python-classes-using-mixins-6lj)
+28. Login Screen with TKinter and Sqllite3 [Ref](https://owlbuddy.com/login-and-signup-using-sqlite)
+29. Asyncio
+30. Generators
+31. Coroutines
+32. Fibonacci series using Reflections
+33. Filters, Maps, Any, All
+34. Multi-threading
+35. Socket Programming
+36. Descriptors
+37. Enumerate
+38. Closures
+39. Factorial using Recursion and Memoization
+40. Reflections
+41. Subroutines
+42. Currying Method
+43. Context Managers
+44. CGI Programming
+45. Flask
+46. 
