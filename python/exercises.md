@@ -78,8 +78,8 @@
 78. Logging
 79. Unit Testing using unittest and pytest
 80. CGI programming
-81. 
-82. 
+81. Palindrome
+82. Number guessing game
 83. Flask Rest API Calculator
 84. Creating Python packages and publishing to Pypi
 85. CLI using Argparse
@@ -99,5 +99,5 @@
 94. Python script to create Kafka Topics
 95. kubernetes operator using kopf
 96. A custom webhook using Python Flask API for Kubernetes Validating and Mutating Admission controllers
-97. number guessing game
-98. Palindrome
+97. 
+98. 
