@@ -75,3 +75,13 @@
 75. Graph Shortest path
 76. Tower of Hanoi
 77. Bitwise Operations
+78. Logging
+79. Unit Testing
+80. CGI
+81. Tkinter
+82. Database operation with SQLite3
+83. Flask Rest API Calculator
+84. Creating Python packages and publishing to Pypi
+85. CLI using Argparse
+86. Regular Expressions
+87. 
