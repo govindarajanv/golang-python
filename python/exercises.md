@@ -76,12 +76,30 @@
 76. Tower of Hanoi
 77. Bitwise Operations
 78. Logging
-79. Unit Testing
-80. CGI
+79. Unit Testing using unittest and pytest
+80. CGI programming
 81. Tkinter
 82. Database operation with SQLite3
 83. Flask Rest API Calculator
 84. Creating Python packages and publishing to Pypi
 85. CLI using Argparse
 86. Regular Expressions
-87. 
+87. Read an RSS Feed as XML and convert to csv
+88. Python program to 
+  1. convert a dictionary to json string (json.dumps)
+  1. json string to a new python dict (json.loads)
+  1. write the same dictionary as a json file (json.dump)
+  1. json file to a diff python dict(json.load)
+89. find all documents (.pdf,.doc,.docx) in a given folder using re.compile, os.walk [ref](https://stackoverflow.com/questions/39293968/how-do-i-search-directories-and-find-files-that-match-regex)
+90. create an ansible module to install packages using [yum](https://www.techbeatly.com/customizing-ansible-ansible-module-creation/)
+91. create Kafka topic on MSK running on localstack using boto3
+92. create Kafka topic on MSK running on localstack using AWS CDK
+93. Run a calculator API on localstack using
+  1. Serverless
+94. Python script to create Kafka Topics
+95. kubernetes operator using kopf
+96. A custom webhook using Python Flask API for Kubernetes Validating and Mutating Admission controllers
+97. number guessing game
+98. Fibonacci Series
+99. Palindrome
+100.  
