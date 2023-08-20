@@ -43,4 +43,35 @@
 43. Context Managers
 44. CGI Programming
 45. Flask
-46. 
+46. Stack using List
+47. Queue using List
+48. Priority Queue
+49. Set
+50. Dictionary
+51. Ordered Dictionary
+52. Linear Search Sorted Input
+53. Linear Search Unsorted Input
+54. Binary Search
+55. Bubble Sort
+56. Insertion Sort
+57. Selection Sort
+58. Merge Sort
+59. Quick Sort
+60. Linked List - Insert element at the head, end , middle
+61. LinkedList - Traverse and Search
+62. LinkedList - Delete element at the head, end and middle
+63. Reverse a linked list
+64. Reverse a doubly linkedlist recursively
+65. Stack using LinkedList
+66. Queue using LinkedList
+67. Queue using Stack
+68. Stack using deque
+69. Stack - balanced paranthesis
+70. Complete Binary Tree
+71. Binary Tree Traversal
+72. Hash Table Implementation
+73. Graph Depth first traversal
+74. Graph bread first traversal
+75. Graph Shortest path
+76. Tower of Hanoi
+77. Bitwise Operations
