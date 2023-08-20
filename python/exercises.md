@@ -41,7 +41,7 @@
 41. Subroutines
 42. Currying Method
 43. Context Managers
-44. CGI Programming
+44. Setup Virtual Environment using virtualenv and pyenv
 45. Flask Rest API Calculator
 46. Stack using List
 47. Queue using List
@@ -80,10 +80,10 @@
 80. CGI programming
 81. Palindrome
 82. Number guessing game
-83. 
+83. Factorial using Lambda function and functools.reduce
 84. Creating Python packages and publishing to Pypi
 85. CLI using Argparse
-86. Regular Expressions
+86. Write a program to check the validity of password input by users
 87. Read an RSS Feed as XML and convert to csv
 88. Python program to 
   1. convert a dictionary to json string (json.dumps)
@@ -99,5 +99,7 @@
 94. Python script to create Kafka Topics
 95. kubernetes operator using kopf
 96. A custom webhook using Python Flask API for Kubernetes Validating and Mutating Admission controllers
-97. 
-98. 
+97. Use a list comprehension to halve each even number in a list
+98. write assert statements to verify that every number in a list is odd (generate the list with random numbers between 1 to 20
+99. 
+100. 
