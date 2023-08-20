@@ -42,7 +42,7 @@
 42. Currying Method
 43. Context Managers
 44. CGI Programming
-45. Flask
+45. Flask Rest API Calculator
 46. Stack using List
 47. Queue using List
 48. Priority Queue
@@ -80,7 +80,7 @@
 80. CGI programming
 81. Palindrome
 82. Number guessing game
-83. Flask Rest API Calculator
+83. 
 84. Creating Python packages and publishing to Pypi
 85. CLI using Argparse
 86. Regular Expressions
