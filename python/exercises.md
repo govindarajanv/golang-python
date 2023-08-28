@@ -1,4 +1,4 @@
-1. Override Dunder methods such as new, init, str, repr, call, dict and del and create an object using new and init methods directly, print object name multiple times using call method. [answer](python/creational-design-patterns/dunder_methods.p)
+1. Override Dunder methods such as new, init, str, repr, call, dict and del and create an object using new and init methods directly, print object name multiple times using call method. [answer](python/creational-design-patterns/dunder_methods.py)
 2. Thread safe Singleton using allocators 
 3. Singleton using decorator
 4. Singleton using Metaclass
