@@ -1,7 +1,7 @@
 1. Override Dunder methods such as new, init, str, repr, call, dict and del and create an object using new and init methods directly, print object name multiple times using call method. 
 [Solution](creational-design-patterns/dunder_methods.py)
 2. Create a "Thread safe Singleton" called 'Database' using allocators. [Solution](creational-design-patterns/singleton_allocator.py)
-3. Singleton using decorator
+3. Singleton using decorator.  [Solution](creational-design-patterns/singleton_decorator.py)
 4. Singleton using Metaclass
 5. Factory Design Pattern
 6. Abstract Factory Design Pattern
