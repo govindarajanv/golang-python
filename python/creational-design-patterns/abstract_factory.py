@@ -48,17 +48,17 @@ class HotDrinksMachine:
             for drink in self.AvailableDrinks:
                 factory = drink.name[0] + drink.name[1:].lower() + "Factory"
                 self.__factories[drink.name] = factory
-        print (self.__factories)
                 
     def prepare(self):
         
         choice = input("Please choose your beverage. [Coffee/Tea]:")
+        #assert choice.lower() == "coffee" or choice.lower() == "tea", "Invalid option"
         available_drinks = [member.name for member in self.AvailableDrinks]
         if choice.upper() in available_drinks:
             factory = eval(self.__factories[choice.upper()])()
             return factory.prepare(200)
         else:
-            raise ValueError("Invalid Option")
+            raise AssertionError("Invalid Option")
             
 if __name__ == "__main__":
     hd = HotDrinksMachine()
