@@ -1,69 +1,68 @@
-from abc import ABC 
+from abc import ABC,abstractmethod
 from enum import Enum,auto
 
 class HotDrinks(ABC):
+    @abstractmethod
     def consume(self):
         pass
-
+    
 class Coffee(HotDrinks):
+    
     def consume(self):
-        print ("Coffee was very aromatic!!!")
-
+        print ("Coffee is being consumed")
+        
 class Tea(HotDrinks):
+    
     def consume(self):
-        print ("I had a flavourful Tea!!!")
-
+        print ("Tea is being consumed")
+        
 class HotDrinksFactory(ABC):
+    
+    @abstractmethod
     def prepare(self,quantity):
         pass
-
+    
 class CoffeeFactory(HotDrinksFactory):
+    
     def prepare(self,quantity):
-        print (f"Coffee is being prepared. You will be served {quantity} ml of Coffee")
         return Coffee()
-
+        
 class TeaFactory(HotDrinksFactory):
+    
     def prepare(self,quantity):
-        print (f"Tea is being prepared. You will be served {quantity} ml of Tea")
         return Tea()
-
-class HotDrinkMachine:
-    class AvailableDrink(Enum):  # violates OCP
+        
+class HotDrinksMachine:
+    class AvailableDrinks(Enum):
         COFFEE = auto()
         TEA = auto()
-
-    factories = []
-    initialized = False
-
+        
+    __factories = {}
+    __initialized = False
     def __init__(self):
-        if not self.initialized:
-            self.initialized = True
-            for d in self.AvailableDrink:
-                name = d.name[0] + d.name[1:].lower()
-                factory_name = name + 'Factory'
-                factory_instance = eval(factory_name)()
-                self.factories.append((name, factory_instance))
 
-
-    def make_drink(self):
-        print('Available drinks:')
-        for f in self.factories:
-            print(f[0])
-
-
-        s = input(f'Please pick drink (0-{len(self.factories)-1}): ')
-        try:
-            idx = int(s)
-            if idx < 0 or idx >= 2:
-                raise ValueError("Only 0 or 1 is expected") 
-        except Exception as err:
-            raise RuntimeError(err)
-        else:    
-            return self.factories[idx][1].prepare(150)
-
-
-if __name__ == '__main__':
-
-    hdm = HotDrinkMachine()
-    drink = hdm.make_drink()
-    drink.consume()
+        
+        if not self.__initialized:
+            self.__initialized = True
+            for drink in self.AvailableDrinks:
+                factory = drink.name[0] + drink.name[1:].lower() + "Factory"
+                self.__factories[drink.name] = factory
+        print (self.__factories)
+    def prepare(self):
+        choice = input("Enter your choice [Coffee/Tea]")
+        print (choice.upper())
+        available_drinks = [member.name for member in self.AvailableDrinks]
+        print (values)
+        if choice.upper() in available_drinks:
+            print (self.__factories[choice.upper()])
+            factory = eval(self.__factories[choice.upper()])()
+            return factory.prepare(200)
+        else:
+            raise ValueError ("Not a valid option")
+            
+                    
+if __name__ == "__main__":
+    hd = HotDrinksMachine()
+    
+    beverage = hd.prepare()
+    beverage.consume()
