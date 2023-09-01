@@ -78,7 +78,7 @@
 77. Bitwise Operations
 78. Logging
 79. Unit Testing using unittest and pytest
-80. CGI programming
+80. CGI programming [ref](https://faun.pub/python-cgi-programming-adb854b34ce8)
 81. Palindrome
 82. Number guessing game
 83. Factorial using Lambda function and functools.reduce
