@@ -1,3 +1,5 @@
+# define Python user-defined exceptions
+
 class Tea:
 
     def consume(self):

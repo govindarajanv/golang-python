@@ -2,8 +2,8 @@
 [Solution](creational-design-patterns/dunder_methods.py)
 2. Create a "Thread safe Singleton" called 'Database' using allocators. [Solution](creational-design-patterns/singleton_allocator.py)
 3. Implement a Singleton class called "Database" using decorator.  [Solution](creational-design-patterns/singleton_decorator.py)
-4. Singleton using Metaclass
-5. Factory Design Pattern
+4. Singleton using Metaclass.  [Solution](creational-design-patterns/singleton_metaclass.py)
+5. Factory Design Pattern.  [Solution](creational-design-patterns/factory.py)
 6. Abstract Factory Design Pattern
 7. Builder Design Pattern
 8. Prototype Design Pattern
