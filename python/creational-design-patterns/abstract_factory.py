@@ -45,29 +45,21 @@ class HotDrinkMachine:
                 self.factories.append((name, factory_instance))
 
 
-
-
-
     def make_drink(self):
         print('Available drinks:')
         for f in self.factories:
             print(f[0])
 
+
         s = input(f'Please pick drink (0-{len(self.factories)-1}): ')
-        idx = int(s)
-        s = input(f'Specify quantity: ')
-        quantity = int(s)
-        return self.factories[idx][1].prepare(quantity)
-
-
-
-def make_drink(type):
-    if type == 'tea':
-        return TeaFactory().prepare(200)
-    elif type == 'coffee':
-        return CoffeeFactory().prepare(50)
-    else:
-        return None
+        try:
+            idx = int(s)
+            if idx < 0 or idx >= 2:
+                raise ValueError("Only 0 or 1 is expected") 
+        except Exception as err:
+            raise RuntimeError(err)
+        else:    
+            return self.factories[idx][1].prepare(150)
 
 
 if __name__ == '__main__':
