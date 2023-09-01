@@ -25,6 +25,7 @@ class VMBuilder:
 
     def configure_disk(self,disk):
         self.VM.disk = disk
+
 # Director
 class CLI:
     def __init__(self):

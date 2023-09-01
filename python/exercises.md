@@ -5,15 +5,15 @@
 4. Singleton using Metaclass.  [Solution](creational-design-patterns/singleton_metaclass.py)
 5. Factory Design Pattern.  [Solution](creational-design-patterns/factory.py)
 6. Abstract Factory Design Pattern.   [Solution](creational-design-patterns/abstract_factory.py)
-7. Builder Design Pattern
-8. Prototype Design Pattern
-9. Adapter Design Pattern
-10. Bridge
-11. Composite
-12. Decorator
-13. Facade
-14. Flyweight
-15. Proxy
+7. Builder Design Pattern.   [Solution](creational-design-patterns/builder.py)
+8. Prototype Design Pattern.   [Solution](creational-design-patterns/prototype.py)
+9. Adapter Design Pattern.   [Solution](structural-design-patterns/adaptor.py)
+10. Bridge.   [Solution](structural-design-patterns/bridge.py)
+11. Composite.   [Solution](structural-design-patterns/composite.py)
+12. Decorator.   [Solution](structural-design-patterns/decorator.py)
+13. Facade.   [Solution](structural-design-patterns/facade.py)
+14. Flyweight.   [Solution](structural-design-patterns/flyweight.py)
+15. Proxy.   [Solution](structural-design-patterns/proxy.py)
 16. COR
 17. Command
 18. Iterator
