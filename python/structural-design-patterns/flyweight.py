@@ -1,57 +1,90 @@
-class IFlyWeight():
-    "Nothing to implement"
+from enum import Enum
+
+class Pen:
+    def setColor(self, color):
+        pass
+
+    def draw(self, content):
+        pass
 
 
-class FlyWeight(IFlyWeight):
-    "The Concrete Flyweight"
-
-    def __init__(self, code: str) -> None:
-        self.code = code
-
-
-class FlyweightFactory():
-    "Creating the FlyweightFactory as a singleton"
-
-    _flyweights = {}  # Python 3.9
-
-    def __new__(cls):
-        return cls
-
-    @classmethod
-    def get_flyweight(cls, code):
-        "A static method to get a flyweight based on a code"
-        if not code in cls._flyweights:
-            cls._flyweights[code] = FlyWeight(code)
-        return cls._flyweights[code]
-
-    @classmethod
-    def get_count(cls) -> int:
-        "Return the number of flyweights in the cache"
-        return len(cls._flyweights)
+class BrushSize(Enum):
+    THIN = 1
+    MEDIUM = 2
+    THICK = 3
 
 
-class Context():
-    """
-    An example context that holds references to the flyweights in a
-    particular order and converts the code to an ascii letter
-    """
+class ThickPen(Pen):
+    brushSize = BrushSize.THICK
+    color = None
 
-    def __init__(self, codes: str) -> None:
-        self.codes = list(codes)
+    def setColor(self, color):
+        self.color = color
 
-    def output(self):
-        "The context specific output that uses flyweights"
-        ret = ""
-        for code in self.codes:
-            ret = ret + FlyweightFactory.get_flyweight(code).code
-        return ret
+    def draw(self, content):
+        print(f"Drawing content: {content} in color: {self.color} with brush size: {self.brushSize}")
 
 
-# The Client
-CONTEXT = Context("abracadabra")
+class ThinPen(Pen):
+    brushSize = BrushSize.THIN
+    color = None
 
-# use flyweights in a context
-print(CONTEXT.output())
+    def setColor(self, color):
+        self.color = color
 
-print(f"abracadabra has {len('abracadabra')} letters")
-print(f"FlyweightFactory has {FlyweightFactory.get_count()} flyweights")
+    def draw(self, content):
+        print(f"Drawing content: {content} in color: {self.color} with brush size: {self.brushSize}")
+
+
+class MediumPen(Pen):
+    brushSize = BrushSize.MEDIUM
+    color = None
+
+    def setColor(self, color):
+        self.color = color
+
+    def draw(self, content):
+        print(f"Drawing content: {content} in color: {self.color} with brush size: {self.brushSize}")
+        
+class PenFactory:
+    pens = {}
+
+    @staticmethod
+    def getThickPen(color):
+        key = color + "-THICK"
+        if key not in PenFactory.pens:
+            pen = ThickPen()
+            pen.setColor(color)
+            PenFactory.pens[key] = pen
+        return PenFactory.pens[key]
+
+    @staticmethod
+    def getThinPen(color):
+        key = color + "-THIN"
+        if key not in PenFactory.pens:
+            pen = ThickPen()
+            pen.setColor(color)
+            PenFactory.pens[key] = pen
+        return PenFactory.pens[key]
+
+
+    @staticmethod
+    def getMediumPen(color):
+        key = color + "-MEDIUM"
+        if key not in PenFactory.pens:
+            pen = ThickPen()
+            pen.setColor(color)
+            PenFactory.pens[key] = pen
+        return PenFactory.pens[key]
+
+if __name__ == "__main__":
+        pen1 = PenFactory.getThickPen("YELLOW")
+        pen1.draw("flyweight")
+        pen2 = PenFactory.getThickPen("YELLOW")
+        pen2.draw("flyweight")
+        pen3 = PenFactory.getThinPen("YELLOW")
+        pen3.draw("flyweight")
+        pen4 = PenFactory.getThickPen("BLUE")
+        pen4.draw("flyweight")
+        print(pen1 == pen2,pen1.__hash__(),pen2.__hash__())
+        print(pen3.__hash__())
