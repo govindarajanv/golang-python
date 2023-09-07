@@ -1,9 +1,12 @@
 from enum import Enum
+from abc import abstractmethod, ABC
 
-class Pen:
+class Pen(ABC):
+    @abstractmethod
     def setColor(self, color):
         pass
 
+    @abstractmethod
     def draw(self, content):
         pass
 
