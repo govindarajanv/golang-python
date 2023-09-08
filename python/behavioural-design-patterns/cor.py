@@ -36,18 +36,30 @@ class FailureHandler(Handler):
         else:
             self.next.handle(message)
 
+class DefaultHandler(Handler):
+
+    def __init__(self,next):
+        pass
+
+    def handle(self, message):
+        print("Unsupported message type", message)
+
 class Logger:
 
     def __init__(self):
-        failureHandler = FailureHandler(None)
+        
+        defaultHandler = DefaultHandler(None)
+        failureHandler = FailureHandler(defaultHandler)
         errorHandler = ErrorHandler(failureHandler)
         infoHandler = InfoHandler(errorHandler)
         self.handler = infoHandler
 
     def log(self, message):
         self.handler.handle(message)
+
 if __name__ == "__main__":
     logger = Logger()
+    logger.log("test - message 4")
     logger.log("failure - message 1")
     logger.log("info - message 2")
     logger.log("error - message 3")
