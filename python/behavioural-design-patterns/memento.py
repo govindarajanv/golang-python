@@ -1,4 +1,4 @@
-
+# save and restore the previous state of an object without revealing the details of its implementation
 class TextEditorMemento:
     def __init__(self, text):
         self.text = text

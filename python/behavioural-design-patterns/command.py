@@ -1,3 +1,4 @@
+# Command is a behavioral design pattern that turns a request into a stand-alone object that contains all information about the request
 from abc import ABC,abstractmethod
 
 class Device :

@@ -1,3 +1,4 @@
+# an object alter its behavior when its internal state changes
 from abc import ABC, abstractmethod
 
 class NotificationMode(ABC):
