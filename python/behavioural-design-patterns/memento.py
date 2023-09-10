@@ -1,47 +1,55 @@
-class Memento:
-    def __init__(self, state):
-        self.state = state
+
+class TextEditorMemento:
+    def __init__(self, text):
+        self.text = text
     
-    def getState(self):
-        return self.state
-
-class Originator:
+    def get_text(self):
+        return self.text
+        
+class TextEditor:
     def __init__(self):
-        self.state = None
+        self.text = ""
+    
+    def set_text(self, text):
+        self.text = text
+    
+    def get_text(self):
+        return self.text
+    
+    def save(self):
+        return TextEditorMemento(self.text)
+    
+    def restore(self, memento):
+        self.text = memento.get_text()
 
-    def setState(self, state):
-        self.state = state
-
-    def getState(self):
-        return self.state
-
-    def saveStateToMemento(self):
-        return Memento(self.state)
-
-    def getStateFromMemento(self, memento):
-        self.state = memento.getState()
-
-class CareTaker:
-   def __init__(self):
-      self.mementoList = []
-
-   def add(self, state):
-      self.mementoList.append(state)
-
-   def get(self, index):
-      return self.mementoList[index]
-
+class TextEditorCaretaker:
+    def __init__(self):
+        self.memento_stack = []
+    
+    def save(self, memento):
+        self.memento_stack.append(memento)
+    
+    def undo(self):
+        if self.memento_stack:
+            return self.memento_stack.pop()
+        return None
+        
 if __name__ == "__main__":
-    originator = Originator()
-    careTaker = CareTaker()
-    originator.setState("State #1")
-    originator.setState("State #2")
-    careTaker.add(originator.saveStateToMemento())
-    originator.setState("State #3")
-    careTaker.add(originator.saveStateToMemento())
-    originator.setState("State #4")
-    print("Current State: " + originator.getState())      
-    originator.getStateFromMemento(careTaker.get(0))
-    print("First saved State: " + originator.getState())
-    originator.getStateFromMemento(careTaker.get(1))
-    print("Second saved State: " + originator.getState())
+    textEditor = TextEditor()
+    caretakerUI = TextEditorCaretaker()
+
+    textEditor.set_text("Hello, Rishi!")
+    print("Typed text: " + textEditor.get_text())
+
+
+    caretakerUI.save(textEditor.save())
+
+    textEditor.set_text("Hello, Rich")
+
+    print("Auto corrected text: " + textEditor.get_text())
+
+    previousState = caretakerUI.undo()
+    if previousState is not None:
+        textEditor.restore(previousState)
+
+    print("Undone for correction: " + textEditor.get_text())
