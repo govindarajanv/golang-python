@@ -14,16 +14,16 @@
 13. Facade.   [Solution](structural-design-patterns/facade.py)
 14. Flyweight.   [Solution](structural-design-patterns/flyweight.py)
 15. Proxy.   [Solution](structural-design-patterns/proxy.py)
-16. COR
-17. Command
-18. Iterator
-19. Mediator
-20. Memento
-21. Observer
-22. State
-23. Strategy
-24. Template Method
-25. Visitor
+16. COR.   [Solution](structural-design-patterns/cor.py)
+17. Command.   [Solution](structural-design-patterns/command.py)
+18. Iterator.   [Solution](structural-design-patterns/iterator.py)
+19. Mediator.   [Solution](structural-design-patterns/mediator.py)
+20. Memento.   [Solution](structural-design-patterns/memento.py)
+21. Observer.   [Solution](structural-design-patterns/observer.py)
+22. State.   [Solution](structural-design-patterns/state.py)
+23. Strategy.   [Solution](structural-design-patterns/strategy.py)
+24. Template Method.   [Solution](structural-design-patterns/template-method.py)
+25. Visitor.   [Solution](structural-design-patterns/visitor.py)
 26. Modules (implement simplest MVC)
 27. Python Mixins [ref](https://dev.to/bikramjeetsingh/write-composable-reusable-python-classes-using-mixins-6lj)
 28. Login Screen with TKinter and Sqllite3 [Ref](https://owlbuddy.com/login-and-signup-using-sqlite)
