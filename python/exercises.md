@@ -27,7 +27,7 @@
 26. Modules (implement simplest MVC)
 27. Python Mixins [ref](https://dev.to/bikramjeetsingh/write-composable-reusable-python-classes-using-mixins-6lj)
 28. Login Screen with TKinter and Sqllite3 [Ref](https://owlbuddy.com/login-and-signup-using-sqlite)
-29. Asyncio
+29. Check if a given string is a palindrome using Reflections [Solution](palindrome/palindrome-reflections.py)
 30. Implement a fibonacci series using Generators. Solution[python/fibonacci/fibonacci_generators.py]
 31. Coroutines
 32. Implement a Fibonacci series using Reflections
@@ -38,7 +38,7 @@
 37. Enumerate
 38. Closures
 39. Factorial using Recursion and Memoization
-40. Reflections
+40. Asyncio
 41. Subroutines
 42. Currying Method
 43. Context Managers
