@@ -29,7 +29,7 @@
 28. Login Screen with TKinter and Sqllite3 [Ref](https://owlbuddy.com/login-and-signup-using-sqlite)
 29. Check if a given string is a palindrome using Reflections [Solution](palindrome/palindrome-reflections.py)
 30. Implement a fibonacci series using Generators. [Solution](fibonacci/fibonacci_generators.py)
-31. Coroutines
+31. Factorial using Lambda function and functools.reduce [Solution](factorial/factorial_lambda_functools.py)
 32. Modules (implement simplest MVC)
 33. Filters, Maps, Any, All
 34. Multi-threading
@@ -81,7 +81,7 @@
 80. CGI programming [ref](https://faun.pub/python-cgi-programming-adb854b34ce8)
 81. Palindrome
 82. Number guessing game
-83. Factorial using Lambda function and functools.reduce
+83. Coroutines
 84. Creating Python packages and publishing to Pypi
 85. CLI using Argparse
 86. Write a program to check the validity of password input by users
