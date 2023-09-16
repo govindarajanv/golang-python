@@ -1,28 +1,34 @@
-class Descriptor:
+class JobDescriptor:
     def __init__(self):
-        self.__fuel_cap = 0
+        self.__build_timeout = 0
     def __get__(self, instance, owner):    
-        return self.__fuel_cap
+        return self.__build_timeout
     def __set__(self, instance, value):
         if isinstance(value, int):
-            print(value)
+            pass
         else:
-            raise TypeError("Fuel Capacity can only be an integer")
+            raise TypeError("Build timeout can only be an integer")
 
         if value < 0:
-            raise ValueError("Fuel Capacity can never be less than zero")
+            raise ValueError("Build timeout can never be less than zero")
 
-        self.__fuel_cap = value
+        self.__build_timeout = value
 
     def __delete__(self, instance):
-        del self.__fuel_cap
+        del self.__build_timeout
 
-class Car:
-    fuel_cap = Descriptor()
-    def __init__(self,make,model,fuel_cap):
-        self.make = make
-        self.model = model
-        self.fuel_cap = fuel_cap
+class CIBuild:
+    build_timeout = JobDescriptor()
+    def __init__(self,workflow_name,timeout):
+        self.workflow_name = workflow_name
+        self.build_timeout = timeout
+        self.status = "Created"
 
     def __str__(self):
-        return "{0} model {1} with a fuel capacity of {2} ltr.".format(self.make,self.model,self.fuel_cap)
+        return "Workflow {0} with a build timeout of {1} is created.".format(self.workflow_name,self.build_timeout)
+if __name__ == "__main__":
+    build = CIBuild("new-service",20)
+    print (build)
+    print ("Updating the timeout")
+    build.build_timeout = 40
+    print (build)
