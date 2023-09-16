@@ -39,16 +39,16 @@
 38. Bitwise Operations [Solution](misc/bitwise.py) 
 39. Currying Method [Solution](misc/currying_timeconversion.py)
 40. Logging [Solution](misc/logger.py)
-41. Python program to [Solution](misc/json_operations.py)
+41. Python program to perform json operations [Solution](misc/json_operations.py)
     1. convert a dictionary to json string (json.dumps)
     1. json string to a new python dict (json.loads)
     1. write the same dictionary as a json file (json.dump)
     1. json file to a diff python dict(json.load)
-42. 
+42. Stack using List   [Solution](/data-structures/stack.py)
 43. Setup Virtual Environment using virtualenv and pyenv
 44. Unit Testing using unittest and pytest
 45. Creating Python packages and publishing to Pypi
-46. Stack using List
+46. 
 47. Queue using List
 48. Priority Queue
 49. Set
