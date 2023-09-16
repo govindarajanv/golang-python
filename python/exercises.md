@@ -45,8 +45,8 @@
     1. write the same dictionary as a json file (json.dump)
     1. json file to a diff python dict(json.load)
 42. Stack using List   [Solution](/data-structures/stack.py)
-43. Queue using List
-44. Setup Virtual Environment using virtualenv and pyenv
+43. Stack - balanced paranthesis [Solution](/data-structures/bracketsBalanced.py)
+44. Queue using List
 45. Unit Testing using unittest and pytest
 46. Creating Python packages and publishing to Pypi
 47. 
@@ -71,7 +71,7 @@
 66. Queue using LinkedList
 67. Queue using Stack
 68. Stack using deque
-69. Stack - balanced paranthesis
+69. Setup Virtual Environment using virtualenv and pyenv
 70. Complete Binary Tree
 71. Binary Tree Traversal
 72. Hash Table Implementation
