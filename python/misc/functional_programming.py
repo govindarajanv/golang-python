@@ -29,5 +29,12 @@ print (functools.reduce(lambda x,y:x+y,strings))
 # use operator.add to concatenate strings
 print (functools.reduce(operator.add,strings))
 
+strings = ["Learning"," Python","In","2023"," Is"," Fun"]
+
+# check if there is any num in strings list
+check_num = [x.isnumeric() for x in strings]
+print ("any number?",any(check_num))
+print ("all numbers?",all(check_num))
+
 
 
