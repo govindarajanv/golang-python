@@ -34,16 +34,16 @@
 33. Factorial using Recursion and Memoization [Solution](factorial/factorial_memoization.py)
 34. Descriptors [Solution](misc/descriptor.py)
 35. Closures [Solution](misc/closures.py)
-36. Multi-threading
-37. Enumerate
-38. Socket Programming
-39. Modules (implement simplest MVC)
-40. Asyncio
-41. Subroutines
-42. Currying Method
-43. Context Managers
-44. Setup Virtual Environment using virtualenv and pyenv
-45. Flask Rest API Calculator
+36. Palindrome using recursion [Solution](palindrome/palindrome-recursion.py) 
+37. Context Managers
+38. Bitwise Operations [Solution](python/misc/bitwise.py) 
+39. Setup Virtual Environment using virtualenv and pyenv
+40. Unit Testing using unittest and pytest
+41. Currying Method
+42. Logging
+43. Creating Python packages and publishing to Pypi
+44. Number guessing game
+45. CLI using Argparse
 46. Stack using List
 47. Queue using List
 48. Priority Queue
@@ -75,32 +75,32 @@
 74. Graph bread first traversal
 75. Graph Shortest path
 76. Tower of Hanoi
-77. Bitwise Operations
-78. Logging
-79. Unit Testing using unittest and pytest
-80. CGI programming [ref](https://faun.pub/python-cgi-programming-adb854b34ce8)
-81. Palindrome using recursion
-82. Number guessing game
-83. Coroutines
-84. Creating Python packages and publishing to Pypi
-85. CLI using Argparse
-86. Write a program to check the validity of password input by users
-87. Read an RSS Feed as XML and convert to csv
-88. Python program to 
+77. Modules (implement simplest MVC)
+78. Python program to 
   1. convert a dictionary to json string (json.dumps)
   1. json string to a new python dict (json.loads)
   1. write the same dictionary as a json file (json.dump)
   1. json file to a diff python dict(json.load)
-89. find all documents (.pdf,.doc,.docx) in a given folder using re.compile, os.walk [ref](https://stackoverflow.com/questions/39293968/how-do-i-search-directories-and-find-files-that-match-regex)
+79. Socket Programming 
+80. Subroutines
+81. Coroutines
+82. CGI programming [ref](https://faun.pub/python-cgi-programming-adb854b34ce8)
+83. Multi-threading 
+84. write assert statements to verify that every number in a list is odd (generate the list with random numbers between 1 to 20
+85. Implement a system admin task using subprocess,os,sys modules
+86. Write a program to check the validity of password input by users
+87. Read an RSS Feed as XML and convert to csv
+88. find all documents (.pdf,.doc,.docx) in a given folder using re.compile, os.walk [ref](https://stackoverflow.com/questions/39293968/how-do-i-search-directories-and-find-files-that-match-regex)
 90. create an ansible module to install packages using [yum](https://www.techbeatly.com/customizing-ansible-ansible-module-creation/)
+89. Asyncio
 91. create Kafka topic on MSK running on localstack using boto3
 92. create Kafka topic on MSK running on localstack using AWS CDK
 93. Run a calculator API on localstack using
   1. Serverless
-94. gRPC in Python [ref](https://www.velotio.com/engineering-blog/grpc-implementation-using-python)
-95. kubernetes operator using kopf
-96. A custom webhook using Python Flask API for Kubernetes Validating and Mutating Admission controllers
-97. Use a list comprehension to halve each even number in a list
-98. write assert statements to verify that every number in a list is odd (generate the list with random numbers between 1 to 20
-99. Implement a system admin task using subprocess,os,sys modules
-100. GraphQL [ref](https://www.apollographql.com/blog/graphql/python/complete-api-guide/)
+94. Flask Rest API Calculator
+95. A custom webhook using Python Flask API for Kubernetes Validating and Mutating Admission controllers
+96. kubernetes operator using kopf
+97. gRPC in Python [ref](https://www.velotio.com/engineering-blog/grpc-implementation-using-python)
+98. GraphQL [ref](https://www.apollographql.com/blog/graphql/python/complete-api-guide/)
+99. 
+100. 
