@@ -39,7 +39,11 @@
 38. Bitwise Operations [Solution](misc/bitwise.py) 
 39. Currying Method [Solution](misc/currying_timeconversion.py)
 40. Logging [Solution](misc/logger.py)
-41. 
+41. Python program to [Solution](misc/json_operations.py)
+  1. convert a dictionary to json string (json.dumps)
+  1. json string to a new python dict (json.loads)
+  1. write the same dictionary as a json file (json.dump)
+  1. json file to a diff python dict(json.load)
 42. 
 43. Setup Virtual Environment using virtualenv and pyenv
 44. Unit Testing using unittest and pytest
@@ -76,11 +80,7 @@
 75. Graph Shortest path
 76. Tower of Hanoi
 77. Modules (implement simplest MVC)
-78. Python program to 
-  1. convert a dictionary to json string (json.dumps)
-  1. json string to a new python dict (json.loads)
-  1. write the same dictionary as a json file (json.dump)
-  1. json file to a diff python dict(json.load)
+78. 
 79. Socket Programming 
 80. Subroutines
 81. Coroutines
