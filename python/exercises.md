@@ -30,8 +30,8 @@
 29. Check if a given string is a palindrome using Reflections [Solution](palindrome/palindrome-reflections.py)
 30. Implement a fibonacci series using Generators. [Solution](fibonacci/fibonacci_generators.py)
 31. Factorial using Lambda function and functools.reduce [Solution](factorial/factorial_lambda_functools.py)
-32. Modules (implement simplest MVC)
-33. Filters, Maps, Any, All
+32. Filters, Maps, Any, All [Solution](misc/functional_programming.py)
+33. Modules (implement simplest MVC)
 34. Multi-threading
 35. Socket Programming
 36. Descriptors
