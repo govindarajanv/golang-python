@@ -32,11 +32,11 @@
 31. Factorial using Lambda function and functools.reduce [Solution](factorial/factorial_lambda_functools.py)
 32. Filters, Maps, Any, All [Solution](misc/functional_programming.py)
 33. Factorial using Recursion and Memoization [Solution](factorial/factorial_memoization.py)
-34. Multi-threading
-35. Socket Programming
-36. Descriptors
+34. Descriptors [Solution](misc/descriptor.py)
+35. Closures
+36. Multi-threading
 37. Enumerate
-38. Closures
+38. Socket Programming
 39. Modules (implement simplest MVC)
 40. Asyncio
 41. Subroutines
