@@ -1,4 +1,5 @@
 import functools,operator
+import random
 
 numbers = [9, 3, 49, 6, 28, 5, 20, 0, 3, 7,4, 2, 23, 34, 1, 8, 35]
 
@@ -37,4 +38,6 @@ print ("any number?",any(check_num))
 print ("all numbers?",all(check_num))
 
 
-
+# Generate a list of random numbers
+random_nums = lambda num: [random.randint(1,20) for _ in range(0,num)]
+print (random_nums(10))
