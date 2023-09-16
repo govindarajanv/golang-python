@@ -37,13 +37,13 @@
 36. Palindrome using recursion [Solution](palindrome/palindrome-recursion.py) 
 37. Context Managers [Solution](misc/context-manager.py)
 38. Bitwise Operations [Solution](misc/bitwise.py) 
-39. Setup Virtual Environment using virtualenv and pyenv
-40. Unit Testing using unittest and pytest
-41. Currying Method [Solution](misc/currying_timeconversion.py)
-42. Logging
-43. Creating Python packages and publishing to Pypi
-44. Number guessing game
-45. CLI using Argparse
+39. Currying Method [Solution](misc/currying_timeconversion.py)
+40. Logging [Solution](misc/logger.py)
+41. 
+42. 
+43. Setup Virtual Environment using virtualenv and pyenv
+44. Unit Testing using unittest and pytest
+45. Creating Python packages and publishing to Pypi
 46. Stack using List
 47. Queue using List
 48. Priority Queue
@@ -102,5 +102,5 @@
 96. kubernetes operator using kopf
 97. gRPC in Python [ref](https://www.velotio.com/engineering-blog/grpc-implementation-using-python)
 98. GraphQL [ref](https://www.apollographql.com/blog/graphql/python/complete-api-guide/)
-99. 
-100. 
+99. Number guessing game
+100. CLI using Argparse
