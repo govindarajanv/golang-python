@@ -33,7 +33,7 @@
 32. Filters, Maps, Any, All [Solution](misc/functional_programming.py)
 33. Factorial using Recursion and Memoization [Solution](factorial/factorial_memoization.py)
 34. Descriptors [Solution](misc/descriptor.py)
-35. Closures
+35. Closures [Solution](misc/closures.py)
 36. Multi-threading
 37. Enumerate
 38. Socket Programming
@@ -79,7 +79,7 @@
 78. Logging
 79. Unit Testing using unittest and pytest
 80. CGI programming [ref](https://faun.pub/python-cgi-programming-adb854b34ce8)
-81. Palindrome
+81. Palindrome using recursion
 82. Number guessing game
 83. Coroutines
 84. Creating Python packages and publishing to Pypi
