@@ -35,7 +35,7 @@
 34. Descriptors [Solution](misc/descriptor.py)
 35. Closures [Solution](misc/closures.py)
 36. Palindrome using recursion [Solution](palindrome/palindrome-recursion.py) 
-37. Context Managers
+37. Context Managers [Solution](misc/context-manager.py)
 38. Bitwise Operations [Solution](python/misc/bitwise.py) 
 39. Setup Virtual Environment using virtualenv and pyenv
 40. Unit Testing using unittest and pytest
