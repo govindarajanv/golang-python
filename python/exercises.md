@@ -45,11 +45,11 @@
     1. write the same dictionary as a json file (json.dump)
     1. json file to a diff python dict(json.load)
 42. Stack using List   [Solution](/data-structures/stack.py)
-43. Setup Virtual Environment using virtualenv and pyenv
-44. Unit Testing using unittest and pytest
-45. Creating Python packages and publishing to Pypi
-46. 
-47. Queue using List
+43. Queue using List
+44. Setup Virtual Environment using virtualenv and pyenv
+45. Unit Testing using unittest and pytest
+46. Creating Python packages and publishing to Pypi
+47. 
 48. Priority Queue
 49. Set
 50. Dictionary
