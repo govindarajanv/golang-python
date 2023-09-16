@@ -36,10 +36,10 @@
 35. Closures [Solution](misc/closures.py)
 36. Palindrome using recursion [Solution](palindrome/palindrome-recursion.py) 
 37. Context Managers [Solution](misc/context-manager.py)
-38. Bitwise Operations [Solution](python/misc/bitwise.py) 
+38. Bitwise Operations [Solution](misc/bitwise.py) 
 39. Setup Virtual Environment using virtualenv and pyenv
 40. Unit Testing using unittest and pytest
-41. Currying Method
+41. Currying Method [Solution](misc/currying_timeconversion.py)
 42. Logging
 43. Creating Python packages and publishing to Pypi
 44. Number guessing game
