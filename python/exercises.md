@@ -47,9 +47,9 @@
 42. Stack using List   [Solution](data-structures/stack_using_list.py)
 43. Stack - balanced paranthesis [Solution](data-structures/stack_balanced_paranthesis.py)
 44. Queue using List [Solution](data-structures/queue_using_list.py)
-45. Unit Testing using unittest and pytest
+45. Linked List - Insert element at the head, end , middle
 46. Creating Python packages and publishing to Pypi
-47. 
+47. Unit Testing using unittest and pytest
 48. Priority Queue
 49. Set
 50. Dictionary
@@ -62,7 +62,7 @@
 57. Selection Sort
 58. Merge Sort
 59. Quick Sort
-60. Linked List - Insert element at the head, end , middle
+60. 
 61. LinkedList - Traverse and Search
 62. LinkedList - Delete element at the head, end and middle
 63. Reverse a linked list
