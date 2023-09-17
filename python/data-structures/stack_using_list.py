@@ -7,6 +7,9 @@ class Stack:
     
     def __len__(self):
         return len(self.__items)
+
+    def __str__(self):
+        return str(self.__items)
         
     def isEmpty(self):
         return len(self) == 0        
@@ -27,8 +30,7 @@ class Stack:
             raise Exception("pop() called on empty stack.")
         return self.__items.pop()
         
-    def __str__(self):
-        return str(self.__items)
+
 if __name__ == "__main__":
     stack1 = Stack()
     print ("Is Stack Empty?", stack1.isEmpty())
