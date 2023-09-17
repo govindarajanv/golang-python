@@ -46,7 +46,7 @@
     1. json file to a diff python dict(json.load)
 42. Stack using List   [Solution](data-structures/stack_using_list.py)
 43. Stack - balanced paranthesis [Solution](data-structures/stack_balanced_paranthesis.py)
-44. Queue using List
+44. Queue using List [Solution](data-structures/queue_using_list.py)
 45. Unit Testing using unittest and pytest
 46. Creating Python packages and publishing to Pypi
 47. 
