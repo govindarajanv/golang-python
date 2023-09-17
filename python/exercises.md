@@ -45,7 +45,7 @@
     1. write the same dictionary as a json file (json.dump)
     1. json file to a diff python dict(json.load)
 42. Stack using List   [Solution](data-structures/stack_using_list.py)
-43. Stack - balanced paranthesis [Solution](data-structures/bracketsBalanced.py)
+43. Stack - balanced paranthesis [Solution](data-structures/stack_balanced_paranthesis.py)
 44. Queue using List
 45. Unit Testing using unittest and pytest
 46. Creating Python packages and publishing to Pypi
