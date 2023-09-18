@@ -22,19 +22,21 @@ class LinkedList:
             node = node.next
         
     def __str__(self):
-        value = []
-        for i in self:
-            value.append(i.data)
-        return str(value)
+        value = ""
+        for node in self:
+            value += str(node.data) + "-->"
+        return value
         
-    def prepend(self,node):
+    def prepend(self,data):
+        node = Node(data)
         if self.head is None:
             self.head = node 
         else:
             node.next = self.head
             self.head = node
     
-    def append(self,node):
+    def append(self,data):
+        node = Node(data)
         if self.head is None:
             self.head = node 
             return
@@ -50,45 +52,25 @@ class LinkedList:
             pass
         
     def reverse(self):
-        curr = self.head
         prev_node = None
-        next_node = None
+        curr = self.head 
         while curr:
-
-            next_node = curr.next # 7
-            curr.next = prev_node # 11
-            prev_node = curr # 5
-            curr = next_node # 7
-            curr = next_node
+            next_node = curr.next 
+            curr.next = prev_node 
+            prev_node = curr 
+            curr = next_node git 
+        self.head = prev_node
             
         
 if __name__ == "__main__":
     
     ll = LinkedList()
-    node1 = Node(5)
-    node2 = Node(7)
-    ll.head = node1
-    node1.set_next(node2)
-    print ("LinkedList:",ll)
-    
-    
-    # prepend
-    node3 = Node(11)
-    ll.prepend(node3)
-    print ("After prepending:",ll)
-    
-    # append
-    node4 = Node(12)
-    ll.append(node4)
-    print ("After appending:",ll)
-    
-    # insert
-    node5 = Node(15)
-    ll.insert(node5,3)
-    
-    # find element
-    # delete a node
-    # sort list in ascending order
-    # length of LinkedList
-    
+    ll.append(5)
+    ll.append(7)
+    ll.append(10)
+    print ("LinkedList:",ll)  
+    ll.prepend(12)  
+    print ("LinkedList:",ll)  
+    ll.reverse()
+    print ("LinkedList:",ll)   
     
