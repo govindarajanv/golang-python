@@ -20,7 +20,13 @@ class LinkedList:
         while node is not None:
             yield node
             node = node.next
-        
+
+    def __len__(self):
+        length = 0
+        for curr in self:
+            length += 1
+        return length
+
     def __str__(self):
         value = ""
         for node in self:
@@ -47,10 +53,29 @@ class LinkedList:
             last_node = curr
             last_node.next = node
             
-    def insert(self,node,pos):
-        for node_ref in self:
-            pass
-        
+    def insert(self,data,pos):
+        if pos > len(self):
+            raise Exception ("Index out of range")
+        if pos == 0:
+            self.prepend(data)
+            return
+        elif pos == len(self):
+            self.append(data)
+            return
+
+        node = Node(data)
+        index = 0
+        for iter in self:
+            if pos-1 == index:
+                curr_node = iter
+                next_node = iter.next
+                curr_node.next = node                
+                node.next = next_node
+                return
+            else:
+                index += 1
+        return
+       
     def reverse(self):
         prev_node = None
         curr = self.head 
@@ -58,10 +83,9 @@ class LinkedList:
             next_node = curr.next 
             curr.next = prev_node 
             prev_node = curr 
-            curr = next_node git 
+            curr = next_node 
         self.head = prev_node
-            
-        
+                   
 if __name__ == "__main__":
     
     ll = LinkedList()
@@ -73,4 +97,9 @@ if __name__ == "__main__":
     print ("LinkedList:",ll)  
     ll.reverse()
     print ("LinkedList:",ll)   
-    
+    ll.insert(17,0)
+    print ("LinkedList:",ll) 
+    ll.insert(11,5)
+    print ("LinkedList:",ll) 
+    ll.insert(24,2)
+    print ("LinkedList:",ll) 
