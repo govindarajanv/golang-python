@@ -49,10 +49,10 @@
 44. Queue using List [Solution](data-structures/queue_using_list.py)
 45. Linked List - Insert element at the head, end , middle [Solution](data-structures/linked_list.py)
 46. Priority Queue [Solution](data-structures/priority_queue.py)
-47. Set
-48. Dictionary
-49. Hash Table Implementation
-50. Tower of Hanoi [Solution](data-structures/tower_of_hanoi.py)
+47. Tower of Hanoi [Solution](data-structures/tower_of_hanoi.py)
+48. Modules (implement simplest MVC) [Solution](/mvc)
+49. Unit Testing using unittest and pytest [Solution](/testing)
+50. CLI using Argparse
 51. Ordered Dictionary
 52. Linear Search Sorted Input
 53. Linear Search Unsorted Input
@@ -74,13 +74,13 @@
 69. Setup Virtual Environment using virtualenv and pyenv
 70. Complete Binary Tree
 71. Binary Tree Traversal
-72. Unit Testing using unittest and pytest
+72. 
 73. Graph Depth first traversal
 74. Graph bread first traversal
 75. Graph Shortest path
-76. 
-77. Modules (implement simplest MVC)
-78. 
+76. Dictionary
+77. Set
+78. Hash Table Implementation
 79. Socket Programming 
 80. Subroutines
 81. Coroutines
@@ -103,4 +103,4 @@
 97. gRPC in Python [ref](https://www.velotio.com/engineering-blog/grpc-implementation-using-python)
 98. GraphQL [ref](https://www.apollographql.com/blog/graphql/python/complete-api-guide/)
 99. Number guessing game
-100. CLI using Argparse
+100. 
