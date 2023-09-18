@@ -47,12 +47,12 @@
 42. Stack using List   [Solution](data-structures/stack_using_list.py)
 43. Stack - balanced paranthesis [Solution](data-structures/stack_balanced_paranthesis.py)
 44. Queue using List [Solution](data-structures/queue_using_list.py)
-45. Linked List - Insert element at the head, end , middle
-46. Creating Python packages and publishing to Pypi
-47. Unit Testing using unittest and pytest
-48. Priority Queue
-49. Set
-50. Dictionary
+45. Linked List - Insert element at the head, end , middle [Solution](data-structures/linked_list.py)
+46. Priority Queue
+47. Set
+48. Dictionary
+49. Hash Table Implementation
+50. Tower of Hanoi [Solution](data-structures/tower_of_hanoi.py)
 51. Ordered Dictionary
 52. Linear Search Sorted Input
 53. Linear Search Unsorted Input
@@ -62,7 +62,7 @@
 57. Selection Sort
 58. Merge Sort
 59. Quick Sort
-60. 
+60. Creating Python packages and publishing to Pypi
 61. LinkedList - Traverse and Search
 62. LinkedList - Delete element at the head, end and middle
 63. Reverse a linked list
@@ -74,11 +74,11 @@
 69. Setup Virtual Environment using virtualenv and pyenv
 70. Complete Binary Tree
 71. Binary Tree Traversal
-72. Hash Table Implementation
+72. Unit Testing using unittest and pytest
 73. Graph Depth first traversal
 74. Graph bread first traversal
 75. Graph Shortest path
-76. Tower of Hanoi
+76. 
 77. Modules (implement simplest MVC)
 78. 
 79. Socket Programming 
