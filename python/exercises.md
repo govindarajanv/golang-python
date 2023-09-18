@@ -48,7 +48,7 @@
 43. Stack - balanced paranthesis [Solution](data-structures/stack_balanced_paranthesis.py)
 44. Queue using List [Solution](data-structures/queue_using_list.py)
 45. Linked List - Insert element at the head, end , middle [Solution](data-structures/linked_list.py)
-46. Priority Queue
+46. Priority Queue [Solution](data-structures/priority_queue.py)
 47. Set
 48. Dictionary
 49. Hash Table Implementation
