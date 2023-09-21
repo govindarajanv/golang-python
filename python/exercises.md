@@ -52,8 +52,8 @@
 47. Tower of Hanoi [Solution](data-structures/tower_of_hanoi.py)
 48. Modules (implement simplest MVC) [Solution](/mvc)
 49. Unit Testing using unittest and pytest [Solution](/testing)
-50. CLI using Argparse
-51. Ordered Dictionary
+50. CLI using Argparse [Solution](misc/mcms.py)
+51. Read an RSS Feed as XML and convert to csv [Solution] (misc/rss_feed_xml.py)
 52. Linear Search Sorted Input
 53. Linear Search Unsorted Input
 54. Binary Search
@@ -74,7 +74,7 @@
 69. Setup Virtual Environment using virtualenv and pyenv
 70. Complete Binary Tree
 71. Binary Tree Traversal
-72. 
+72. Regex Operation 
 73. Graph Depth first traversal
 74. Graph bread first traversal
 75. Graph Shortest path
@@ -89,7 +89,7 @@
 84. write assert statements to verify that every number in a list is odd (generate the list with random numbers between 1 to 20
 85. Implement a system admin task using subprocess,os,sys modules
 86. Write a program to check the validity of password input by users
-87. Read an RSS Feed as XML and convert to csv
+87. Ordered Dictionary
 88. find all documents (.pdf,.doc,.docx) in a given folder using re.compile, os.walk [ref](https://stackoverflow.com/questions/39293968/how-do-i-search-directories-and-find-files-that-match-regex)
 90. create an ansible module to install packages using [yum](https://www.techbeatly.com/customizing-ansible-ansible-module-creation/)
 89. Asyncio
