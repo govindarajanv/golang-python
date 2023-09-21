@@ -1,0 +1,10 @@
+[
+    {
+        "app_name": "wallet_service",
+        "app_type": "microservice"
+    },
+    {
+        "app_name": "notification_service",
+        "app_type": "microservice"
+    }
+]
