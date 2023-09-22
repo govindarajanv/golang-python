@@ -67,13 +67,13 @@
 61. A custom webhook using Python Flask API for Kubernetes Validating and Mutating Admission controllers
 62. kubernetes operator using kopf
 63. Reverse a linked list
-64. Linear Search Unsorted Input
+64. Flask Rest API Calculator
 65. Binary Search
 66. Bubble Sort
 67. Insertion Sort
 68. Stack using deque
-69. LinkedList - Delete element at the head, end and middle
-70. LinkedList - Traverse and Search
+69. Multi-Processing
+70. Linear Search Unsorted Input
 71. Linear Search Sorted Input 
 72. Quick Sort
 73. Merge Sort
@@ -83,4 +83,4 @@
 77. Coroutines
 78. Asyncio
 79. Multi-threading 
-80. Flask Rest API Calculator
+

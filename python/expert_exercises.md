@@ -15,3 +15,6 @@
 15. Hash Table Implementation
 16. gRPC in Python [ref](https://www.velotio.com/engineering-blog/grpc-implementation-using-python)
 17. GraphQL [ref](https://www.apollographql.com/blog/graphql/python/complete-api-guide/)
+18. LinkedList - Delete element at the head, end and middle
+19. LinkedList - Traverse and Search
+20. Matplotlib and Pandas -  a simple example
