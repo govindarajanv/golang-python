@@ -54,53 +54,33 @@
 49. Unit Testing using unittest and pytest [Solution](/testing)
 50. CLI using Argparse [Solution](misc/mcms.py)
 51. Read an RSS Feed as XML and convert to csv [Solution] (misc/rss_feed_xml.py)
-52. Linear Search Sorted Input
-53. Linear Search Unsorted Input
-54. Binary Search
-55. Bubble Sort
-56. Insertion Sort
-57. Selection Sort
-58. Merge Sort
-59. Quick Sort
-60. Creating Python packages and publishing to Pypi
-61. LinkedList - Traverse and Search
-62. LinkedList - Delete element at the head, end and middle
-63. Reverse a linked list
-64. Reverse a doubly linkedlist recursively
-65. Stack using LinkedList
-66. Queue using LinkedList
-67. Queue using Stack
-68. Stack using deque
-69. Setup Virtual Environment using virtualenv and pyenv
-70. Complete Binary Tree
-71. Binary Tree Traversal
-72. Regex Operation 
-73. Graph Depth first traversal
-74. Graph bread first traversal
-75. Graph Shortest path
-76. Dictionary
-77. Set
-78. Hash Table Implementation
-79. Socket Programming 
-80. Subroutines
-81. Coroutines
-82. CGI programming [ref](https://faun.pub/python-cgi-programming-adb854b34ce8)
-83. Multi-threading 
-84. write assert statements to verify that every number in a list is odd (generate the list with random numbers between 1 to 20
-85. Implement a system admin task using subprocess,os,sys modules
-86. Write a program to check the validity of password input by users
-87. Ordered Dictionary
-88. find all documents (.pdf,.doc,.docx) in a given folder using re.compile, os.walk [ref](https://stackoverflow.com/questions/39293968/how-do-i-search-directories-and-find-files-that-match-regex)
-90. create an ansible module to install packages using [yum](https://www.techbeatly.com/customizing-ansible-ansible-module-creation/)
-89. Asyncio
-91. create Kafka topic on MSK running on localstack using boto3
-92. create Kafka topic on MSK running on localstack using AWS CDK
-93. Run a calculator API on localstack using
+52. Regex Operation [Solution](misc/regex.py)
+53. Write a program to check the validity of password input by users
+54. Setup Virtual Environment using virtualenv and pyenv
+55. Creating Python packages and publishing to Pypi
+56. Implement a system admin task using subprocess,os,sys modules
+57. create an ansible module to install packages using [yum](https://www.techbeatly.com/customizing-ansible-ansible-module-creation/)
+58. create Kafka topic on MSK running on localstack using boto3
+59. create Kafka topic on MSK running on localstack using AWS CDK
+60. Run a calculator API on localstack using
   1. Serverless
-94. Flask Rest API Calculator
-95. A custom webhook using Python Flask API for Kubernetes Validating and Mutating Admission controllers
-96. kubernetes operator using kopf
-97. gRPC in Python [ref](https://www.velotio.com/engineering-blog/grpc-implementation-using-python)
-98. GraphQL [ref](https://www.apollographql.com/blog/graphql/python/complete-api-guide/)
-99. Number guessing game
-100. 
+61. A custom webhook using Python Flask API for Kubernetes Validating and Mutating Admission controllers
+62. kubernetes operator using kopf
+63. Reverse a linked list
+64. Linear Search Unsorted Input
+65. Binary Search
+66. Bubble Sort
+67. Insertion Sort
+68. Stack using deque
+69. LinkedList - Delete element at the head, end and middle
+70. LinkedList - Traverse and Search
+71. Linear Search Sorted Input 
+72. Quick Sort
+73. Merge Sort
+74. Selection Sort
+75. Socket Programming 
+76. Subroutines
+77. Coroutines
+78. Asyncio
+79. Multi-threading 
+80. Flask Rest API Calculator
