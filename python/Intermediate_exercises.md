@@ -47,7 +47,7 @@
 42. Stack using List   [Solution](data-structures/stack_using_list.py)
 43. Stack - balanced paranthesis [Solution](data-structures/stack_balanced_paranthesis.py)
 44. Queue using List [Solution](data-structures/queue_using_list.py)
-45. Linked List - Insert element at the head, end , middle [Solution](data-structures/linked_list.py)
+45. Linked List - Insert element at the head, end , middle, reverse [Solution](data-structures/linked_list.py)
 46. Priority Queue [Solution](data-structures/priority_queue.py)
 47. Tower of Hanoi [Solution](data-structures/tower_of_hanoi.py)
 48. Modules (implement simplest MVC) [Solution](/mvc)
@@ -55,7 +55,7 @@
 50. CLI using Argparse [Solution](misc/mcms.py)
 51. Read an RSS Feed as XML and convert to csv [Solution] (misc/rss_feed_xml.py)
 52. Regex Operation [Solution](misc/regex.py)
-53. Write a program to check the validity of password input by users
+53. Write a program to check the validity of password input by users [Solution] (misc/pass_validation.py)
 54. Setup Virtual Environment using virtualenv and pyenv
 55. Creating Python packages and publishing to Pypi
 56. Implement a system admin task using subprocess,os,sys modules
@@ -66,15 +66,15 @@
   1. Serverless
 61. A custom webhook using Python Flask API for Kubernetes Validating and Mutating Admission controllers
 62. kubernetes operator using kopf
-63. Reverse a linked list
+63. Binary Tree (pre-order,post-order and in-order traversal) [Solution](data-structures/binary_tree.py)
 64. Flask Rest API Calculator
-65. Binary Search
+65. Binary Search [Solution](python/algorithms/binary-search.py)
 66. Bubble Sort
 67. Insertion Sort
 68. Stack using deque
 69. Multi-Processing
-70. Linear Search Unsorted Input
-71. Linear Search Sorted Input 
+70. Linear Search Unsorted Input [Solution](algorithms/linear_search_unsorted.py)
+71. Linear Search Sorted Input [Solution](algorithms/linear_search_sorted.py)
 72. Quick Sort
 73. Merge Sort
 74. Selection Sort

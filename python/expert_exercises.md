@@ -11,7 +11,7 @@
 11. Set
 12. FastAPI Calculator
 13. Django API Calculator
-14. Complete Binary Tree
+14. Invert Binary Tree
 15. Hash Table Implementation
 16. gRPC in Python [ref](https://www.velotio.com/engineering-blog/grpc-implementation-using-python)
 17. GraphQL [ref](https://www.apollographql.com/blog/graphql/python/complete-api-guide/)
