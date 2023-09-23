@@ -67,14 +67,14 @@
 61. A custom webhook using Python Flask API for Kubernetes Validating and Mutating Admission controllers
 62. kubernetes operator using kopf
 63. Binary Tree (pre-order,post-order and in-order traversal) [Solution](data-structures/binary_tree.py)
-64. Flask Rest API Calculator
+64. Multi-Processing
 65. Binary Search [Solution](python/algorithms/binary-search.py)
-66. Bubble Sort
-67. Insertion Sort
-68. Stack using deque
-69. Multi-Processing
-70. Linear Search Unsorted Input [Solution](algorithms/linear_search_unsorted.py)
-71. Linear Search Sorted Input [Solution](algorithms/linear_search_sorted.py)
+66. Linear Search Unsorted Input [Solution](algorithms/linear_search_unsorted.py)
+67. Linear Search Sorted Input [Solution](algorithms/linear_search_sorted.py)
+68. Stack using deque [Solution](python/data-structures/stack_using_deque.py)
+69. Flask Rest API Calculator
+70. Bubble Sort [Solution](algorithms/bubble_sort.py)
+71. Insertion Sort [Solution](algorithms/insertion_sort.py)
 72. Quick Sort
 73. Merge Sort
 74. Selection Sort
