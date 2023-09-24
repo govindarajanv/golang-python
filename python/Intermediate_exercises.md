@@ -72,7 +72,7 @@
 66. Linear Search Unsorted Input [Solution](algorithms/linear_search_unsorted.py)
 67. Linear Search Sorted Input [Solution](algorithms/linear_search_sorted.py)
 68. Stack using deque [Solution](python/data-structures/stack_using_deque.py)
-69. Flask Rest API Calculator
+69. Flask Rest API Calculator [Solution](webapp/calculator.py)
 70. Bubble Sort [Solution](algorithms/bubble_sort.py)
 71. Insertion Sort [Solution](algorithms/insertion_sort.py)
 72. Quick Sort
