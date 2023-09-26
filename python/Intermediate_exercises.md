@@ -61,11 +61,11 @@
 56. Linear Search Unsorted Input [Solution](algorithms/linear_search_unsorted.py)
 57. Linear Search Sorted Input [Solution](algorithms/linear_search_sorted.py)
 58. Stack using deque [Solution](python/data-structures/stack_using_deque.py)
-59. Flask Rest API Calculator [Solution](webapp/calculator.py)
+59. Flask Rest API Calculator [Solution](rest-api/calculator.py)
 60. Bubble Sort [Solution](algorithms/bubble_sort.py)
 61. Insertion Sort [Solution](algorithms/insertion_sort.py)
 62. kubernetes operator using kopf
-63. Setup Virtual Environment using virtualenv and pyenv
+63. Setup Virtual Environment using virtualenv and pyenv [Solution](setups/README.md)
 64. LinkedList - Delete element at the head, end and middle, Traverse and Search
 65. Creating Python packages and publishing to Pypi
 66. Implement a system admin task using subprocess,os,sys modules 
@@ -83,5 +83,5 @@
 77. Multi-threading 
 78. Asyncio & Coroutines
 79. cProfile, timeit and pstats and prometheus client library implementation [ref](https://matthewzhaocc.com/building-a-custom-prometheus-exporter-in-python-6491d4cdcef3)
-80. A calculator web application using Flask [ref](https://github.com/rajatguptarg/calc/blob/master/calc.py)
+80. A calculator web application using Flask [Solution](python/webapp/app.py)
 
