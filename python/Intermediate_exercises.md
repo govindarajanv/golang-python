@@ -64,11 +64,11 @@
 59. Flask Rest API Calculator [Solution](rest-api/calculator.py)
 60. Bubble Sort [Solution](algorithms/bubble_sort.py)
 61. Insertion Sort [Solution](algorithms/insertion_sort.py)
-62. kubernetes operator using kopf
-63. Setup Virtual Environment using virtualenv and pyenv [Solution](setups/README.md)
-64. LinkedList - Delete element at the head, end and middle, Traverse and Search
+62. Setup Virtual Environment using virtualenv and pyenv [Solution](setups/README.md)
+63. A calculator web application using Flask [Solution](python/webapp/app.py)
+64. Implement a system admin task using subprocess,os,sys modules [Solution](sysadmin/sysadmin.py)
 65. Creating Python packages and publishing to Pypi
-66. Implement a system admin task using subprocess,os,sys modules 
+66. LinkedList - Delete element at the head, end and middle, Traverse and Search
 67. create an ansible module to install packages using [yum](https://www.techbeatly.com/customizing-ansible-ansible-module-creation/)
 68. create Kafka topic on MSK running on localstack using boto3 
 69. create Kafka topic on MSK running on localstack using AWS CDK 
@@ -83,5 +83,5 @@
 77. Multi-threading 
 78. Asyncio & Coroutines
 79. cProfile, timeit and pstats and prometheus client library implementation [ref](https://matthewzhaocc.com/building-a-custom-prometheus-exporter-in-python-6491d4cdcef3)
-80. A calculator web application using Flask [Solution](python/webapp/app.py)
+80. kubernetes operator using kopf
 
