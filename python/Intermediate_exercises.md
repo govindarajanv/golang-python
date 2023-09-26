@@ -26,7 +26,7 @@
 25. Visitor.   [Solution](structural-design-patterns/visitor.py)
 26. Factorial using Recursion and Memoization [Solution](factorial/factorial_memoization.py)
 27. Python Mixins [Solution](misc/mixin.py)
-28. Login Screen with TKinter and Sqllite3 [Ref](https://owlbuddy.com/login-and-signup-using-sqlite)
+28. requests and urllib3 - CRUD Operations [Ref](https://dummyjson.com/products/add)
 29. Check if a given string is a palindrome using Reflections [Solution](palindrome/palindrome-reflections.py)
 30. Implement a fibonacci series using Generators. [Solution](fibonacci/fibonacci_generators.py)
 31. Factorial using Lambda function and functools.reduce [Solution](factorial/factorial_lambda_functools.py)
@@ -67,7 +67,7 @@
 61. A custom webhook using Python Flask API for Kubernetes Validating and Mutating Admission controllers
 62. kubernetes operator using kopf
 63. Binary Tree (pre-order,post-order and in-order traversal) [Solution](data-structures/binary_tree.py)
-64. Multi-Processing
+64. LinkedList - Delete element at the head, end and middle, Traverse and Search
 65. Binary Search [Solution](python/algorithms/binary-search.py)
 66. Linear Search Unsorted Input [Solution](algorithms/linear_search_unsorted.py)
 67. Linear Search Sorted Input [Solution](algorithms/linear_search_sorted.py)
@@ -79,8 +79,8 @@
 73. Merge Sort
 74. Selection Sort
 75. Socket Programming 
-76. Subroutines
-77. Coroutines
-78. Asyncio
-79. Multi-threading 
+76. Multi-Processing
+77. Multi-threading 
+78. Asyncio & Coroutines
+79. A calculator web application using Flask [ref](https://github.com/rajatguptarg/calc/blob/master/calc.py)
 
