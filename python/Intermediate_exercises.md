@@ -53,7 +53,7 @@
 48. Modules (implement simplest MVC) [Solution](/mvc)
 49. Unit Testing using unittest and pytest [Solution](/testing)
 50. CLI using Argparse [Solution](misc/mcms.py)
-51. Read an RSS Feed as XML and convert to csv [Solution] (misc/rss_feed_xml.py)
+51. Read an RSS Feed as XML and convert to csv [Solution](misc/rss_feed_xml.py)
 52. Regex Operation [Solution](misc/regex.py)
 53. Write a program to check the validity of password input by users [Solution] (misc/pass_validation.py)
 54. Setup Virtual Environment using virtualenv and pyenv
