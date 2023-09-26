@@ -73,7 +73,7 @@
 68. create Kafka topic on MSK running on localstack using boto3 
 69. create Kafka topic on MSK running on localstack using AWS CDK 
 70. Run a calculator API on localstack using
-  1. Serverless
+   1. Serverless
 71. A custom webhook using Python Flask API for Kubernetes Validating and Mutating Admission controllers
 72. Quick Sort
 73. Merge Sort
