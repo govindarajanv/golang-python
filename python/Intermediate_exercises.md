@@ -56,25 +56,25 @@
 51. Read an RSS Feed as XML and convert to csv [Solution](misc/rss_feed_xml.py)
 52. Regex Operation [Solution](misc/regex.py)
 53. Write a program to check the validity of password input by users [Solution](misc/pass_validation.py)
-54. Setup Virtual Environment using virtualenv and pyenv
-55. Creating Python packages and publishing to Pypi
-56. Implement a system admin task using subprocess,os,sys modules
-57. create an ansible module to install packages using [yum](https://www.techbeatly.com/customizing-ansible-ansible-module-creation/)
-58. create Kafka topic on MSK running on localstack using boto3
-59. create Kafka topic on MSK running on localstack using AWS CDK
-60. Run a calculator API on localstack using
-  1. Serverless
-61. A custom webhook using Python Flask API for Kubernetes Validating and Mutating Admission controllers
+54. Binary Tree (pre-order,post-order and in-order traversal) [Solution](data-structures/binary_tree.py)
+55. Binary Search [Solution](python/algorithms/binary-search.py) 
+56. Linear Search Unsorted Input [Solution](algorithms/linear_search_unsorted.py)
+57. Linear Search Sorted Input [Solution](algorithms/linear_search_sorted.py)
+58. Stack using deque [Solution](python/data-structures/stack_using_deque.py)
+59. Flask Rest API Calculator [Solution](webapp/calculator.py)
+60. Bubble Sort [Solution](algorithms/bubble_sort.py)
+61. Insertion Sort [Solution](algorithms/insertion_sort.py)
 62. kubernetes operator using kopf
-63. Binary Tree (pre-order,post-order and in-order traversal) [Solution](data-structures/binary_tree.py)
+63. Setup Virtual Environment using virtualenv and pyenv
 64. LinkedList - Delete element at the head, end and middle, Traverse and Search
-65. Binary Search [Solution](python/algorithms/binary-search.py)
-66. Linear Search Unsorted Input [Solution](algorithms/linear_search_unsorted.py)
-67. Linear Search Sorted Input [Solution](algorithms/linear_search_sorted.py)
-68. Stack using deque [Solution](python/data-structures/stack_using_deque.py)
-69. Flask Rest API Calculator [Solution](webapp/calculator.py)
-70. Bubble Sort [Solution](algorithms/bubble_sort.py)
-71. Insertion Sort [Solution](algorithms/insertion_sort.py)
+65. Creating Python packages and publishing to Pypi
+66. Implement a system admin task using subprocess,os,sys modules 
+67. create an ansible module to install packages using [yum](https://www.techbeatly.com/customizing-ansible-ansible-module-creation/)
+68. create Kafka topic on MSK running on localstack using boto3 
+69. create Kafka topic on MSK running on localstack using AWS CDK 
+70. Run a calculator API on localstack using
+  1. Serverless
+71. A custom webhook using Python Flask API for Kubernetes Validating and Mutating Admission controllers
 72. Quick Sort
 73. Merge Sort
 74. Selection Sort
