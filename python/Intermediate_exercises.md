@@ -71,10 +71,10 @@
 66. create s3 bucket on localstack using boto3 [Solution](localstack/create_s3_buckets_boto3.py)
 67. create Kafka topic, publish a message and consume the same using Python [Solution](devops/kafka_prod_cons.py)
 68. Run a calculator API  using Serverless [Solution](serverless/serverless_framework)
-69. Creating Python packages and publishing to Pypi
+69. Quick Sort [Solution](algorithms/quick_sort.py)
 70. LinkedList - Delete element at the head, end and middle, Traverse and Search
 71. A custom webhook using Python Flask API for Kubernetes Validating and Mutating Admission controllers
-72. Quick Sort
+72. Creating Python packages and publishing to Pypi
 73. Merge Sort
 74. Selection Sort
 75. Socket Programming 
