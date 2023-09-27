@@ -68,12 +68,11 @@
 63. A calculator web application using Flask [Solution](python/webapp/app.py)
 64. Implement a system admin task using subprocess,os,sys modules [Solution](sysadmin/sysadmin.py)
 65. create an ansible module to install packages using [Solution](ansible/package.yml)
-66. LinkedList - Delete element at the head, end and middle, Traverse and Search
-67. Creating Python packages and publishing to Pypi
-68. create Kafka topic on MSK running on localstack using boto3 
-69. create Kafka topic on MSK running on localstack using AWS CDK 
-70. Run a calculator API on localstack using
-    1. Serverless
+66. create s3 bucket on localstack using boto3 [Solution](localstack/create_s3_buckets_boto3.py)
+67. create Kafka topic, publish a message and consume the same using Python [Solution](devops/kafka_prod_cons.py)
+68. Run a calculator API  using Serverless [Solution](serverless/serverless_framework)
+69. Creating Python packages and publishing to Pypi
+70. LinkedList - Delete element at the head, end and middle, Traverse and Search
 71. A custom webhook using Python Flask API for Kubernetes Validating and Mutating Admission controllers
 72. Quick Sort
 73. Merge Sort

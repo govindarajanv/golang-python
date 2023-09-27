@@ -1,0 +1,13 @@
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: python3.9
+
+functions:
+  calculator:
+    handler: handler.lambda_handler
+    events:
+      - httpApi:
+          path: /
+          method: get
