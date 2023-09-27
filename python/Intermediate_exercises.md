@@ -64,7 +64,9 @@
 59. Flask Rest API Calculator [Solution](rest-api/calculator.py)
 60. Bubble Sort [Solution](algorithms/bubble_sort.py)
 61. Insertion Sort [Solution](algorithms/insertion_sort.py)
-62. Setup Virtual Environment using virtualenv and pyenv [Solution](setups/README.md)
+62. Virtual Environments and Packaging
+   1. Setup Virtual Environment using virtualenv and pyenv [Solution](setups/README.md)
+   2. Creating Python packages and publishing to Pypi
 63. A calculator web application using Flask [Solution](python/webapp/app.py)
 64. Implement a system admin task using subprocess,os,sys modules [Solution](sysadmin/sysadmin.py)
 65. create an ansible module to install packages using [Solution](ansible/package.yml)
@@ -74,7 +76,7 @@
 69. Quick Sort [Solution](algorithms/quick_sort.py)
 70. LinkedList - Delete element at the head, end and middle, Traverse and Search
 71. A custom webhook using Python Flask API for Kubernetes Validating and Mutating Admission controllers
-72. Creating Python packages and publishing to Pypi
+72. Use Python Selenium to fetch the latest release of k8s from https://github.com/kubernetes/kubernetes/releases
 73. Merge Sort
 74. Selection Sort
 75. Socket Programming 
