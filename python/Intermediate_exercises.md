@@ -74,12 +74,12 @@
 67. create Kafka topic, publish a message and consume the same using Python [Solution](devops/kafka_prod_cons.py)
 68. Run a calculator API  using Serverless [Solution](serverless/serverless_framework)
 69. Quick Sort [Solution](algorithms/quick_sort.py)
-70. LinkedList - Delete element at the head, end and middle, Traverse and Search
-71. A custom webhook using Python Flask API for Kubernetes Validating and Mutating Admission controllers
-72. Use Python beautifulsoup to fetch the latest release of k8s from https://github.com/kubernetes/kubernetes [Solution](web_scraping/scraping.py)
+70. Use Python beautifulsoup to fetch the latest release of k8s from https://github.com/kubernetes/kubernetes [Solution](web_scraping/scraping.py)
+71. Socket Programming [Solution](socket/socket_server.py)
+72. A custom webhook using Python Flask API for Kubernetes Validating and Mutating Admission controllers
 73. Merge Sort
 74. Selection Sort
-75. Socket Programming [Solution](socket)
+75. LinkedList - Delete element at the head, end and middle, Traverse and Search
 76. Multi-Processing
 77. Multi-threading 
 78. Asyncio & Coroutines
