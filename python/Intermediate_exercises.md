@@ -76,10 +76,10 @@
 69. Quick Sort [Solution](algorithms/quick_sort.py)
 70. LinkedList - Delete element at the head, end and middle, Traverse and Search
 71. A custom webhook using Python Flask API for Kubernetes Validating and Mutating Admission controllers
-72. Use Python Selenium to fetch the latest release of k8s from https://github.com/kubernetes/kubernetes/releases
+72. Use Python beautifulsoup to fetch the latest release of k8s from https://github.com/kubernetes/kubernetes [Solution](web_scraping/scraping.py)
 73. Merge Sort
 74. Selection Sort
-75. Socket Programming 
+75. Socket Programming [Solution](socket)
 76. Multi-Processing
 77. Multi-threading 
 78. Asyncio & Coroutines
