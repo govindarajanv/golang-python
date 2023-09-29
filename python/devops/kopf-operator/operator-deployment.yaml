@@ -1,0 +1,20 @@
+piVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ev-operator
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      application: evs-operator
+  template:
+    metadata:
+      labels:
+        application: evs-operator
+    spec:
+      serviceAccountName: ev-operator-sa
+      containers:
+      - name: evs
+        image: govindarajanv/kopf-ev
