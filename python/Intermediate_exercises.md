@@ -77,12 +77,12 @@
 70. Use Python beautifulsoup to fetch the latest release of k8s from https://github.com/kubernetes/kubernetes [Solution](web_scraping/scraping.py)
 71. Socket Programming [Solution](socket/socket_server.py)
 72. kubernetes operator using kopf [Solution](devops/kopf-operator) 
-73. Merge Sort
+73. A custom webhook using Python Flask API for Kubernetes Validating and Mutating Admission controllers [Solution](devops/admission_controllers)
 74. Selection Sort
 75. LinkedList - Delete element at the head, end and middle, Traverse and Search
 76. Multi-Processing
 77. Multi-threading 
 78. Asyncio & Coroutines
 79. cProfile, timeit and pstats and prometheus client library implementation [ref](https://matthewzhaocc.com/building-a-custom-prometheus-exporter-in-python-6491d4cdcef3)
-80. A custom webhook using Python Flask API for Kubernetes Validating and Mutating Admission controllers
+80. Merge Sort
 
