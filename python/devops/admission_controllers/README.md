@@ -1,5 +1,7 @@
 ## Admission controllers
 
+### validating
+
 ```
 openssl req -x509 -sha256 -newkey rsa:2048 -keyout webhook.key -out webhook.crt -days 1024 -nodes -addext "subjectAltName = DNS.1:validate.default.svc"               
 cat webhook.crt | base64 | tr -d '\n'
@@ -21,3 +23,8 @@ kubectl apply -f label.yaml
 kubectl logs validation-webhook-57cd5587f5-wzvbn
 kubectl create deploy nginx_not_allowed --image=nginx
 ```
+
+### Mutating
+
+https://github.com/k-mitevski/kubernetes-mutating-webhook/blob/main/kubernetes_files/mutate-config.yaml
+https://kmitevski.com/kubernetes-mutating-webhook-with-python-and-fastapi/
