@@ -78,11 +78,10 @@
 71. Socket Programming [Solution](socket/socket_server.py)
 72. kubernetes operator using kopf [Solution](devops/kopf-operator) 
 73. A custom webhook using Python Flask API for Kubernetes Validating and Mutating Admission controllers [Solution](devops/admission_controllers)
-74. Selection Sort
-75. LinkedList - Delete element at the head, end and middle, Traverse and Search
-76. Multi-Processing
-77. Multi-threading 
-78. Asyncio & Coroutines
-79. cProfile, timeit and pstats and prometheus client library implementation [ref](https://matthewzhaocc.com/building-a-custom-prometheus-exporter-in-python-6491d4cdcef3)
-80. Merge Sort
-
+74. Multi-Processing [Solution1](concurrency_parallelism/cpu_bound.py) and [Solution1](concurrency_parallelism/io_bound.py)
+75. Multi-threading [Solution1](concurrency_parallelism/cpu_bound.py) and [Solution1](concurrency_parallelism/io_bound.py)
+76. Asyncio & Coroutines [Solution1](concurrency_parallelism/cpu_bound.py) and [Solution1](concurrency_parallelism/io_bound.py)
+77. cProfile, timeit and pstats and prometheus client library implementation [ref](https://matthewzhaocc.com/building-a-custom-prometheus-exporter-in-python-6491d4cdcef3)
+78. Merge Sort
+79. Selection Sort
+80. LinkedList - Delete element at the head, end and middle, Traverse and Search
