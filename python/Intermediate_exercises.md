@@ -81,7 +81,7 @@
 74. Multi-Processing [Solution1](concurrency_parallelism/cpu_bound.py) and [Solution1](concurrency_parallelism/io_bound.py)
 75. Multi-threading [Solution1](concurrency_parallelism/cpu_bound.py) and [Solution1](concurrency_parallelism/io_bound.py)
 76. Asyncio & Coroutines [Solution1](concurrency_parallelism/cpu_bound.py) and [Solution1](concurrency_parallelism/io_bound.py)
-77. cProfile, timeit and pstats and prometheus client library implementation [ref](https://matthewzhaocc.com/building-a-custom-prometheus-exporter-in-python-6491d4cdcef3)
+77. cProfile, timeit and pstats and prometheus client library implementation [Solution1](webapp/app_with_profiling.py) and [Solution2](devops/prom_exporter.py)
 78. Merge Sort
 79. Selection Sort
 80. LinkedList - Delete element at the head, end and middle, Traverse and Search
