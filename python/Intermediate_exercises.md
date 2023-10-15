@@ -84,4 +84,4 @@
 77. cProfile, timeit and pstats and prometheus client library implementation [Solution1](webapp/app_with_profiling.py) and [Solution2](devops/prom_exporter.py)
 78. Merge Sort [Solution](algorithms/merge-sort.py)
 79. Selection Sort [Solution](algorithms/selection_sort.py)
-80. LinkedList - Delete element at the head, end and middle, Traverse and Search
+80. LinkedList - Delete element at the head, end and middle, Traverse and Search [Solution](data-structures/linked_list_deletion.py)
