@@ -65,8 +65,8 @@
 60. Bubble Sort [Solution](algorithms/bubble_sort.py)
 61. Insertion Sort [Solution](algorithms/insertion_sort.py)
 62. Virtual Environments and Packaging
-   1. Setup Virtual Environment using virtualenv and pyenv [Solution](setups/README.md)
-   2. Creating Python packages and publishing to Pypi
+    1. Setup Virtual Environment using virtualenv and pyenv [Solution](setups/README.md)
+    2. Creating Python packages and publishing to Pypi
 63. A calculator web application using Flask [Solution](python/webapp/app.py)
 64. Implement a system admin task using subprocess,os,sys modules [Solution](sysadmin/sysadmin.py)
 65. create an ansible module to install packages using [Solution](ansible/package.yml)
