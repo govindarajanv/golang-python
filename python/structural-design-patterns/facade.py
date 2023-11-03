@@ -1,33 +1,33 @@
-class RenderJPG:
-    def render(self, filename):
-        print("rendering JPG file:", filename)
+class PythonCLI:
+    def execute(self, filename):
+        print("executing program file:", filename)
 
-class RenderSVG:
-    def render(self, filename):
-        print("Rendering SVG file:", filename)
+class AnsibleCLI:
+    def execute(self, filename):
+        print("executing playbook file:", filename)
 
-class RenderPNG:
-    def render(self, filename):
-        print("Rendering PNG file:", filename)
+class TerraformCLI:
+    def execute(self, filename):
+        print("executing configuration file:", filename)
 
-class ImageViewer:
+class JenkinsPipelineStep:
     def __init__(self):
-        self.jpg_renderer = RenderJPG()
-        self.svg_renderer = RenderSVG()
-        self.png_renderer = RenderPNG()
+        self.tf = TerraformCLI()
+        self.ansible = AnsibleCLI()
+        self.python = PythonCLI()
 
-    def render(self, filename):
-        if filename.endswith(".jpg"):
-            self.jpg_renderer.render(filename)
-        elif filename.endswith(".svg"):
-            self.svg_renderer.render(filename)
-        elif filename.endswith(".png"):
-            self.png_renderer.render(filename)
+    def execute(self, filename):
+        if filename.endswith(".tf"):
+            self.tf.execute(filename)
+        elif filename.endswith(".yml"):
+            self.ansible.execute(filename)
+        elif filename.endswith(".py"):
+            self.python.execute(filename)
         else:
             print("Unsupported file format.")
 
 # Client code
-viewer = ImageViewer()
-viewer.render("nature.jpg")
-viewer.render("valley.png")
-viewer.render("plantuml.svg")
+step = JenkinsPipelineStep()
+step.execute("playbook.yml")
+step.execute("main.tf")
+step.execute("ec2_boto.py")
