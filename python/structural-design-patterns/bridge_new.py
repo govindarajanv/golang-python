@@ -1,75 +1,67 @@
 from abc import ABC,abstractmethod
 
 class Manifest(ABC):
-    
     @abstractmethod
     def apply(self):
         pass
-    
-    @abstractmethod
-    def status(self):
-        pass
-    
-class Pod(Manifest):
     
     def __init__(self,name):
-        self.manifest_name = name
-    
+        self.name = name
+
+class Pod(Manifest):
+
     def apply(self):
-        return "Pod config is applied successfully"
-        
-    def status(self):
-        return "kubectl get pod"
+        return f"Pod {self.name} is applied"
+
+    def get(self):
+        return f"pod {self.name} status"
 
 class ConfigMap(Manifest):
-    
-    def __init__(self,name):
-        self.manifest_name = name
-    
+
     def apply(self):
-        return "ConfigMap config is applied successfully"
-        
-    def status(self):
-        return "kubectl get cm"
-        
-class KubernetesCluster(ABC):
-    
+        return f"ConfigMap {self.name} is applied"
+
+    def get(self):
+        return f"ConfigMap {self.name} status"
+
+class KubeCluster(ABC):
     @abstractmethod
-    def kubectl_apply(self):
+    def apply(self,manifest):
+        pass
+    @abstractmethod
+    def get(self,manifest):
         pass
     
-    @abstractmethod
-    def kubectl_get(self):
-        pass
-    
-class EKS(KubernetesCluster):
-    
-    def kubectl_apply(self,manifest):
-        return manifest.apply() + " on " + self.__class__.__name__
-            
-    def kubectl_get(self,manifest):
-        return f"{manifest.status()} {manifest.manifest_name} on EKS"
-            
-class Minikube(KubernetesCluster):
-    
-    def kubectl_apply(self,manifest):
-        return manifest.apply() + " on " + self.__class__.__name__
-            
-    def kubectl_get(self,manifest):
-        return f"{manifest.status()} {manifest.manifest_name} on Minikube"
-            
+class Minikube(KubeCluster):
+
+    def apply(self,manifest):
+        print (manifest.apply(),f"on {__class__.__name__}")
+
+    def get(self,manifest):
+        print (manifest.get(),f"from {__class__.__name__}")
+
+class EKS(KubeCluster):
+
+    def apply(self,manifest):
+        print (manifest.apply(),f"on {__class__.__name__}")
+
+    def get(self,manifest):
+        print (manifest.get(),f"from {__class__.__name__}")
+
 if __name__ == "__main__":
-    pod1 = Pod("pod1")
-    cm1 = ConfigMap("cm1")
+    pod1 = Pod("nginx")
+    cm1 = ConfigMap("app1-properties")
+    cluster1 = Minikube()
+    cluster2 = EKS()
     
-    mk = Minikube()
-    eks = EKS()
+    cluster1.apply(pod1)
+    cluster1.get(pod1)
     
-    print (mk.kubectl_apply(pod1))
-    print (eks.kubectl_apply(cm1))
-    print (eks.kubectl_apply(pod1))
-    print (mk.kubectl_apply(cm1))
-    print (mk.kubectl_get(pod1))
-    print (eks.kubectl_get(cm1))
+    cluster2.apply(cm1)
+    cluster2.get(cm1)
+
+    cluster2.apply(pod1)
+    cluster2.get(pod1)
     
-        
+    cluster1.apply(cm1)
+    cluster1.get(cm1)  
