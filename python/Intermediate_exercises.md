@@ -4,9 +4,9 @@
 3. Implement a Singleton class called "Database" using decorator.  [Solution](creational-design-patterns/singleton_decorator.py)
 4. Singleton using Metaclass.  [Solution](creational-design-patterns/singleton_metaclass.py)
 5. Factory Design Pattern.  [Solution](creational-design-patterns/factory.py)
-6. Abstract Factory Design Pattern.   [Solution](creational-design-patterns/abstract_factory.py)
+6. **Abstract Factory Design Pattern.   [Solution](creational-design-patterns/abstract_factory.py)** 
 7. Builder Design Pattern.   [Solution](creational-design-patterns/builder.py)
-8. Prototype Design Pattern.   [Solution](creational-design-patterns/prototype.py)
+8. **Prototype Design Pattern.   [Solution](creational-design-patterns/prototype.py)**
 9. Adapter Design Pattern.   [Solution](structural-design-patterns/adaptor.py)
 10. Bridge.   [Solution](structural-design-patterns/bridge.py)
 11. Composite.   [Solution](structural-design-patterns/composite.py)
