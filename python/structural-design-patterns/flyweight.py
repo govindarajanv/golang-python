@@ -1,93 +1,96 @@
 from enum import Enum
 from abc import abstractmethod, ABC
 
-class Pen(ABC):
+class Group(ABC):
     @abstractmethod
-    def setColor(self, color):
+    def setTeam(self, team):
         pass
 
     @abstractmethod
-    def draw(self, content):
+    def access(self, content):
         pass
 
 
-class BrushSize(Enum):
-    THIN = 1
-    MEDIUM = 2
-    THICK = 3
+class Role(Enum):
+    READ = 1
+    WRITE = 2
+    ADMIN = 3
 
 
-class ThickPen(Pen):
-    brushSize = BrushSize.THICK
-    color = None
+class DevOps(Group):
+    roleType = Role.ADMIN
+    team = None
 
-    def setColor(self, color):
-        self.color = color
+    def setTeam(self, team):
+        self.team = team
 
-    def draw(self, content):
-        print(f"Drawing content: {content} in color: {self.color} with brush size: {self.brushSize}")
-
-
-class ThinPen(Pen):
-    brushSize = BrushSize.THIN
-    color = None
-
-    def setColor(self, color):
-        self.color = color
-
-    def draw(self, content):
-        print(f"Drawing content: {content} in color: {self.color} with brush size: {self.brushSize}")
+    def access(self, content):
+        print(f"Accessing {content} as as part of the group: {self.__class__.__name__} from team: {self.team} with role type: {self.roleType}")
 
 
-class MediumPen(Pen):
-    brushSize = BrushSize.MEDIUM
-    color = None
+class Manager(Group):
+    roleType = Role.READ
+    team = None
 
-    def setColor(self, color):
-        self.color = color
+    def setTeam(self, team):
+        self.team = team
 
-    def draw(self, content):
-        print(f"Drawing content: {content} in color: {self.color} with brush size: {self.brushSize}")
+    def access(self, content):
+        print(f"Accessing {content} as part of the group: {self.__class__.__name__} from team: {self.team} with role type: {self.roleType}")
+
+
+class Dev(Group):
+    roleType = Role.WRITE
+    team = None
+
+    def setTeam(self, team):
+        self.team = team
+
+    def access(self, content):
+        print(f"Accessing {content} as as part of the group: {self.__class__.__name__} from team: {self.team} with role type: {self.roleType}")
         
-class PenFactory:
-    pens = {}
+class GroupFactory:
+    groups = {}
 
     @staticmethod
-    def getThickPen(color):
-        key = color + "-THICK"
-        if key not in PenFactory.pens:
-            pen = ThickPen()
-            pen.setColor(color)
-            PenFactory.pens[key] = pen
-        return PenFactory.pens[key]
+    def getDevOpsGroup(team):
+        key = team + "-ADMIN"
+        if key not in GroupFactory.groups:
+            group = DevOps()
+            group.setTeam(team)
+            GroupFactory.groups[key] = group
+        return GroupFactory.groups[key]
 
     @staticmethod
-    def getThinPen(color):
-        key = color + "-THIN"
-        if key not in PenFactory.pens:
-            pen = ThickPen()
-            pen.setColor(color)
-            PenFactory.pens[key] = pen
-        return PenFactory.pens[key]
+    def getManagerGroup(team):
+        key = team + "-READ"
+        if key not in GroupFactory.groups:
+            group = Manager()
+            group.setTeam(team)
+            GroupFactory.groups[key] = group
+        return GroupFactory.groups[key]
 
 
     @staticmethod
-    def getMediumPen(color):
-        key = color + "-MEDIUM"
-        if key not in PenFactory.pens:
-            pen = ThickPen()
-            pen.setColor(color)
-            PenFactory.pens[key] = pen
-        return PenFactory.pens[key]
+    def getDevGroup(team):
+        key = team + "-WRITE"
+        if key not in GroupFactory.groups:
+            group = Dev()
+            group.setTeam(team)
+            GroupFactory.groups[key] = group
+        return GroupFactory.groups[key]
 
 if __name__ == "__main__":
-        pen1 = PenFactory.getThickPen("YELLOW")
-        pen1.draw("flyweight")
-        pen2 = PenFactory.getThickPen("YELLOW")
-        pen2.draw("flyweight")
-        pen3 = PenFactory.getThinPen("YELLOW")
-        pen3.draw("flyweight")
-        pen4 = PenFactory.getThickPen("BLUE")
-        pen4.draw("flyweight")
-        print(pen1 == pen2,pen1.__hash__(),pen2.__hash__())
-        print(pen3.__hash__())
+        group1 = GroupFactory.getDevOpsGroup("Frontend")
+        group1.access("Jenkins")
+        group2 = GroupFactory.getDevOpsGroup("Backend")
+        group2.access("Jenkins")
+        group3 = GroupFactory.getDevGroup("Mobile")
+        group3.access("Jenkins")
+        group4 = GroupFactory.getManagerGroup("Platform")
+        group4.access("Jenkins")
+        group5 = GroupFactory.getDevGroup("Mobile")
+        group5.access("BitBucket")
+        print(group1 == group2)
+        print(group3.__hash__(),group5.__hash__())
+        print (group1.__hash__(),group2.__hash__(),group4.__hash__())
