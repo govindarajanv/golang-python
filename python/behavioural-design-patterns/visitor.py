@@ -1,4 +1,5 @@
-#  separate algorithms from the objects on which they operate
+# separate algorithms from the objects on which they operate
+# Release involves Visitor using involve method and Visitors involve Release using Visit method
 class AppRelease:
     def involve(self, visitor):
         visitor.visit(self)
