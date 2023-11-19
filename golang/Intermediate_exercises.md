@@ -24,7 +24,7 @@
 23. Strategy.   [Solution](behavioural-design-patterns/strategy.py)
 24. Template Method.   [Solution](behavioural-design-patterns/template-method.py)
 25. Visitor.   [Solution](behavioural-design-patterns/visitor.py)
-26. Singleton using monostate [solution](creational-design-patterns/singleton_monostate.py)
+26. Factorial using Recursion and Memoization [Solution](factorial/factorial_memoization.py)
 27. Python Mixins [Solution](misc/mixin.py)
 28. requests and urllib3 - CRUD Operations [Ref](https://dummyjson.com/products/add)
 29. Check if a given string is a palindrome using Reflections [Solution](palindrome/palindrome-reflections.py)
