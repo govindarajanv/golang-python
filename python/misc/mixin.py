@@ -4,7 +4,12 @@ class EqualityMixin:
     def __eq__(self,other):
         if not isinstance(other,type(self)):
             return False
-        return self.__dict__ == other.__dict__
+        for key in self.__dict__:
+            if key != '_Deployment__name':
+                if self.__dict__[key] != other.__dict__[key]:
+                    return False
+        return True
+
 class K8sObject(ABC):
     
     @abstractmethod
