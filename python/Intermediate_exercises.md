@@ -20,7 +20,9 @@
 19. Mediator.   [Solution](behavioural-design-patterns/mediator.py)
 20. Memento.   [Solution](behavioural-design-patterns/memento.py)
 21. Observer.   [Solution](behavioural-design-patterns/observer.py) 
+
 ![Diagram](behavioural-design-patterns/observer.png)
+
 22. State.   [Solution](behavioural-design-patterns/state.py)
 23. Strategy.   [Solution](behavioural-design-patterns/strategy.py)
 24. Template Method.   [Solution](behavioural-design-patterns/template-method.py)
