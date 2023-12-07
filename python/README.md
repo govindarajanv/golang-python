@@ -18,3 +18,11 @@
 | Strategy   | Deployment Strategies | Various Deployment Strategies and CDTool    
 | Template Method   | Observability (Metric,Log and Trace) | Manage encapsulating capture, Publish and View    
 | Visitor   | App Release Process | Each persona visiting to play their part in Release process
+
+### Setup
+
+```
+sudo apt install graphviz -y
+pip install pylint
+pyreverse -o png state.py 
+```
