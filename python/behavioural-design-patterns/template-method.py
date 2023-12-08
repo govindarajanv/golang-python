@@ -24,35 +24,35 @@ class Observability(ABC):
 class Metric(Observability):
     
     def capture(self):
-        print (f"{self.__class__.__name__} is captured")
+        print (f"{self.__class__.__name__} is captured using an OTEL collector")
         
     def publish(self):
-        print (f"{self.__class__.__name__} is published")
+        print (f"{self.__class__.__name__} is published to Prometheus")
         
     def view(self):
-        print (f"{self.__class__.__name__} is viewed")
+        print (f"{self.__class__.__name__} is viewed on Grafana\n") 
         
 class Log(Observability):
     
     def capture(self):
-        print (f"{self.__class__.__name__} is captured")
+        print (f"{self.__class__.__name__} is captured using Fluentd")
         
     def publish(self):
-        print (f"{self.__class__.__name__} is published")
+        print (f"{self.__class__.__name__} is published to Loki")
         
     def view(self):
-        print (f"{self.__class__.__name__} is viewed")
+        print (f"{self.__class__.__name__} is viewed on Grafana\n")
         
 class Trace(Observability):
     
     def capture(self):
-        print (f"{self.__class__.__name__} is captured")
+        print (f"{self.__class__.__name__} is captured using an OTEL collector")
         
     def publish(self):
-        print (f"{self.__class__.__name__} is published")
+        print (f"{self.__class__.__name__} is published to Jaegar")
         
     def view(self):
-        print (f"{self.__class__.__name__} is viewed")
+        print (f"{self.__class__.__name__} is viewed on Grafana\n") 
         
 if __name__ == "__main__":
     cpu_usage = Metric()
