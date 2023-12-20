@@ -41,7 +41,15 @@
     1. Check if any of the numbers in the above list is odd using 'any'
     1. Filter the above result list only for numbers divisible by 10
     1. Check if all of the numbers in the above list are even using 'all'
-32. Filters, Maps, Any, All [Solution](misc/functional_programming.py)
+32. Functional Programming Exercises [Solution](misc/functional_programming.py)
+    1. numbers = [9, 3, 49, 6, 28, 5, 20, 0, 3, 7,4, 2, 23, 34, 1, 8, 35]
+    1. create a list with odd numbers > 7 using list comprehension
+    1. Create a list of square of all numbers in the original list using map
+    1. create a list with even numbers less than 7 from the original list with filter function
+    1. strings = ["Learning"," Python"," Is"," Fun"]. Use .join to concatenate the strings
+    1. Use functools.reduce to concatenate strings
+    1. Use operator.add to concatenate strings
+    1. Generate a list of random numbers
 33. requests and urllib3 - CRUD Operations [Ref](https://dummyjson.com/products/add)
 34. Descriptors [Solution](misc/descriptor.py)
 35. Closures [Solution](misc/closures.py)
