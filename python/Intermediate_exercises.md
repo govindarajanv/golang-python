@@ -33,6 +33,14 @@
 29. Check if a given string is a palindrome using Reflections [Solution](palindrome/palindrome-reflections.py)
 30. Implement a fibonacci series using Generators. [Solution](fibonacci/fibonacci_generators.py)
 31. Factorial using Lambda function and functools.reduce [Solution](factorial/factorial_lambda_functools.py)
+    1. Get the number 
+    1. compute factorial using lambda
+    1. compute factorial using lambda,reduce and range
+    1. compute factorial using function,reduce and range
+    1. a list named 'numbers' has the contents [3, 4, 6, 2, 1, 5], compute factorial using a factorial function and map without using for loop
+    1. Check if any of the numbers in the above list is odd using 'any'
+    1. Filter the above result list only for numbers divisible by 10
+    1. Check if all of the numbers in the above list are even using 'all'
 32. Filters, Maps, Any, All [Solution](misc/functional_programming.py)
 33. requests and urllib3 - CRUD Operations [Ref](https://dummyjson.com/products/add)
 34. Descriptors [Solution](misc/descriptor.py)
