@@ -16,3 +16,12 @@ def test_negative_credits():
   outcome = a.credit(-100)
 
   assert outcome == False
+
+def test_discount():
+    a = CloudCredit(1)
+
+    outcome = a.discount("DUMMY")
+    assert outcome == False
+
+    outcome = a.discount("DISCBFRIDAY")
+    assert outcome == True

@@ -15,3 +15,12 @@ class TestCloudOperations(unittest.TestCase):
         outcome = a.credit(-100)
 
         self.assertFalse(outcome)
+    
+    def test_discount(self):
+        a = CloudCredit(1)
+    
+        outcome = a.discount("DUMMY")
+        self.assertFalse(outcome)
+    
+        outcome = a.discount("DISCBFRIDAY")
+        self.assertTrue(outcome)
