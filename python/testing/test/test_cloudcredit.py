@@ -1,4 +1,4 @@
-from cloud_credit import *
+from src.cloud_credit import *                                                                                                                                           
 
 def test_insufficient_credits():
 

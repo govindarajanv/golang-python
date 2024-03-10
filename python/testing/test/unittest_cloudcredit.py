@@ -1,5 +1,5 @@
 import unittest
-from cloud_credit import *
+from src.cloud_credit import *                                                                                                                                           
 
 class TestCloudOperations(unittest.TestCase):
     def test_insufficient_deposit(self):
