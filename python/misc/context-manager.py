@@ -22,12 +22,20 @@ class SQLiteConnectionManager:
 
 if __name__ == '__main__':
     print ("Before With Block")
-    with SQLiteConnectionManager('./sample.db') as c:
-        print ("inside With Block")
-        c.execute("CREATE TABLE CMDB (id text, server_ip text, base_image text)")
-        c.execute("INSERT INTO CMDB VALUES ('i-12345', '10.1.1.1', 'RHEL8')")
-        c.execute("INSERT INTO CMDB VALUES ('i-12346', '10.1.1.2', 'RHEL7')")
-        c.execute("SELECT * FROM CMDB")
-        result = c.fetchall()
-        print(result)
-    print ("After With Block")
+    with SQLiteConnectionMgr('./sample.db') as cur:
+        cur.execute("CREATE TABLE movie(title, year, score)")
+        cur.execute("""
+    INSERT INTO movie VALUES
+        ('Monty Python and the Holy Grail', 1975, 8.2),
+        ('And Now for Something Completely Different', 1971, 7.5)
+""")
+
+    print ("Data inserted")
+
+    with SQLiteConnectionMgr('./sample.db') as cur:
+        res = cur.execute("SELECT * FROM movie")
+        print (res.fetchall())
+
+
+        
+    print ("Data fetched")
