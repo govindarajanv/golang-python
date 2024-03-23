@@ -1,12 +1,12 @@
 from model import Application
 import view
 
-def showAll():
+def fetch():
    #gets list of all Application objects
-   applications_in_db = Application.getAll()
+   applications_in_db = Application.fetchAll()
    
    #calls view
-   return view.showAllView(applications_in_db)
+   return view.renderView(applications_in_db)
 
 def start():
    view.startView()
