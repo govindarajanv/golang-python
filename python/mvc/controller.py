@@ -12,7 +12,7 @@ def start():
    view.startView()
    input_val = input()
    if input_val == 'y':
-      return showAll()
+      return fetch()
    else:
       return view.endView()
 
