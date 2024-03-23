@@ -10,7 +10,7 @@ class Application:
       return str(self.__dict__)
 		
    @classmethod
-   def getAll(self):
+   def fetchAll(self):
       database = open('db.json', 'r')
       result = []
       json_list = json.load(database)
