@@ -1,6 +1,6 @@
 from model import Application
 
-def showAllView(list):
+def renderView(list):
    print ('\nIn our db we have %i apps. Below is the list:' % len(list))
    for item in list:
       print (item)
