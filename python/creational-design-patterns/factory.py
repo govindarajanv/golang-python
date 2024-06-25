@@ -1,26 +1,26 @@
 class Tea:
     
-    def __init__(self,qty,type):
-        self.type = type
+    def __init__(self,flavor,qty):
+        self.flavor = flavor
         self.qty = qty
         
     def __str__(self):
-        return f"{self.type} {self.__class__.__name__} with qty {self.qty} is served"
+        return f"{self.flavor} {self.__class__.__name__} with qty {self.qty} is ordered"
         
-    def consume(self):
-        print (f"{self.type} {self.__class__.__name__} with qty {self.qty} is consumed")
+    def serve(self):
+        print (f"{self.flavor} {self.__class__.__name__} with qty {self.qty} is served")
 
 class TeaFactory:
     
     @staticmethod
-    def prepare(qty,type="Normal"):
-        return Tea(qty,type)
+    def order(flavor="Plain",qty="200"):
+        return Tea(flavor,qty)
         
 if __name__ == "__main__":
-    mug1 = TeaFactory.prepare(200)
-    print (mug1)
-    mug1.consume()
+    order1 = TeaFactory.order()
+    print (order1)
+    order1.serve()
     
-    mug2 = TeaFactory.prepare(150,"Elaichi")
-    print (mug2)
-    mug2.consume()
+    order2 = TeaFactory.order("Elaichi",150)
+    print (order2)
+    order2.serve()
